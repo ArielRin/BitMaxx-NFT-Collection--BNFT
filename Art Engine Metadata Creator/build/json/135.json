@@ -1,0 +1,23 @@
+{
+  "name": "SafuMaxx Reward NFT #135",
+  "description": "SafuMaxx Reward NFT. 200 in total, with 1 legendary NFT up for grabs. Visit safumaxx.com for all the up to date knowledge of SafuMaxx.",
+  "image": "https://raw.githubusercontent.com/ArielRin/Safu_Assist_NFT/master/Art%20Engine%20Metadata%20Creator/build/images/135.png",
+  "dna": "ebc052c72f2f9fe72b152ecc57770a46ce8cccef",
+  "edition": 135,
+  "date": 1700015422388,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Standard"
+    },
+    {
+      "trait_type": "Image",
+      "value": "SafuMaxxRewardNFT2"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Steel"
+    }
+  ],
+  "compiler": "ArielRyn Art Generation 2023"
+}
