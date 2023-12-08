@@ -1,0 +1,23 @@
+{
+  "name": "Legendary SafuMaxx Reward NFT #142",
+  "description": "SafuMaxx Reward NFT. 200 in total, with 1 legendary NFT AND YOU GOT IT! This exclusive digital collectible is a true gem, boasting a unique combination of intricate artistry and scarcity that sets it apart in the vast NFT landscape. SafuMaxx employs state-of-the-art blockchain technology to ensure the authenticity and rarity of each NFT, and my legendary piece stands as a testament to the platform's commitment to delivering unparalleled value to its community.The rarity of my SafuMaxx legendary NFT is underscored by its limited edition status, with only a handful of these mesmerizing digital assets in existence. Each element of this NFT, from its meticulously crafted design to its scarcity in the broader NFT ecosystem, contributes to its status as a highly sought-after and one-of-a-kind creation. As a proud owner of this legendary SafuMaxx NFT, I am not only part of an exclusive community of collectors but also a custodian of a digital masterpiece that transcends the ordinary, reflecting the intersection of art, technology, and rarity in the captivating world of NFTs",
+  "image": "https://raw.githubusercontent.com/ArielRin/Safu_Assist_NFT/master/Art%20Engine%20Metadata%20Creator/build/images/142.png",
+  "dna": "52a467ad26c53e4f89febce7e529dec4fad4df1f",
+  "edition": 142,
+  "date": 1700015423433,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Image",
+      "value": "Legendary NFT"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Legendary"
+    }
+  ],
+  "compiler": "ArielRyn Art Generation 2023"
+}
