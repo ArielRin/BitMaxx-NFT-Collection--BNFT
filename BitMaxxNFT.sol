@@ -1,16 +1,17 @@
 // SPDX-License-Identifier: MIT
-
 // BitMAXX  NFT Collection
 // Price 5000 PWR
 // Qty: 200
 // No Max per Transaction
 //  // final contract
 /*
- _name: BitMaxx NFT Collection
-  _symbol: BNFT
- _initBaseURI: https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/blob/master/Assets/Metadata/
- _initNotRevealedUri: https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/blob/master/Assets/Metadata/
+ name: BitMaxx NFT Collection
+symbol: BNFT
+initBaseURI: https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/blob/master/Assets/Metadata/
+initNotRevealedUri: https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/blob/master/Assets/Metadata/
 
+Deployed at: https://scan.maxxchain.org/address/0x9F3c6e1bD483cd977DF9B36734E1cD684f1Be621/contracts#address-tabs
+Contract:0x9F3c6e1bD483cd977DF9B36734E1cD684f1Be621
 */
 
 pragma solidity ^0.8.0;

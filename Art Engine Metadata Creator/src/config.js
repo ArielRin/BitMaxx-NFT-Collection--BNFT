@@ -5,17 +5,17 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "SafuMaxx Reward NFT";
-const description = "SafuMaxx Reward NFT. 200 in total, with 1 legendary NFT up for grabs. Visit safumaxx.com for all the up to date knowledge of SafuMaxx.";
-const baseUri = "ipfs://QmcCPpWTL4FxwqXPJLPqRxBiucUd4ZtEtN2tJN7F4mZT98";
+const namePrefix = "BitMaxx NFT Collection";
+const description = "a limited edition series that pushes the boundaries of digital art and innovation. Each NFT in this exclusive collection is priced at 5000PWR, representing a fusion of cutting-edge technology and artistic expression. With a total supply restricted to just 200 minted on the groundbreaking Maxx Chain ";
+const baseUri = "https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/blob/master/Assets/Metadata";
 
 const solanaMetadata = {
-  symbol: "SMR5",
-  seller_fee_basis_points: 500, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://safumaxx.com/",
+  symbol: "BNFT",
+  seller_fee_basis_points: 300, // Define how much % you want from secondary market sales 1000 = 10%
+  external_url: "https://bitmaxx.com/",
   creators: [
     {
-      address: "0x93e792125649733D08050f04fBb395B5F6EA9945", //Ger0 provided
+      address: "0xc690fE0d47803ed50E1EA7109a9750360117aa22", //Ger0 provided
       share: 100,
     },
   ],
