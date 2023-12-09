@@ -10,6 +10,12 @@ BetaTesting Dapp https://gentle-liger-4162d5.netlify.app/
 
 Welcome to the BitMaxx NFT Collection! This collection is built on the MaxxChain network, bringing you a seamless and secure NFT experience. Each NFT in this collection is priced at 5000 PWR, making it an exclusive addition to your digital assets.
 
+
+
+![Admin Page](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/master/admin.jpg)
+
+![Home](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/master/home.jpg)
+
 ## About MaxxChain
 
 MaxxChain is the underlying blockchain network powering the BitMaxx NFT Collection. It provides a robust and decentralized infrastructure, ensuring the security and authenticity of each NFT transaction.
@@ -37,6 +43,7 @@ Connect with the BitMaxx community to stay updated on the latest news, announcem
 Feel free to reach out to us if you have any questions or need assistance.
 
 Happy collecting!
+
 
 
 
