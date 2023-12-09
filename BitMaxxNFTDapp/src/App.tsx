@@ -1,145 +1,102 @@
-
-// const CONTRACT_ADDRESS = '0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C';
-
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Text, Box, Link } from '@chakra-ui/react';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { ethers } from 'ethers';
 import { useAccount, useContractWrite } from 'wagmi';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import abiFile from './abiFile.json';
-import './styles.css'; // Reference to the external CSS file
-
+import './styles.css';
 import backgroundGif from './gold.gif';
-import HausLogo1 from './logo.png'; // Import your image file
-import MainTextLogo from './headerlogo.png'; // Import your image file
-
+import MainTextLogo from './headerlogo.png';
 
 const CONTRACT_ADDRESS = '0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C';
-const getExplorerLink = () => `https://scan.maxxchain.org/address/${CONTRACT_ADDRESS}`; // maxxchain
-// const getExplorerLink = () => `https://bscscan.com/token/${CONTRACT_ADDRESS}`; // bsc
+
+const getExplorerLink = () => `https://scan.maxxchain.org/address/${CONTRACT_ADDRESS}`;
 const getOpenSeaURL = () => `https://testnets.opensea.io/assets/goerli/${CONTRACT_ADDRESS}`;
 
 function App() {
   const account = useAccount();
   const [contractName, setContractName] = useState('');
-  const [totalSupply, setTotalSupply] = useState(0); // Added state for totalSupply
+  const [totalSupply, setTotalSupply] = useState(0);
   const [loading, setLoading] = useState(true);
 
-    const contractConfig = {
-      addressOrName: CONTRACT_ADDRESS,
-      contractInterface: abiFile,
-    };
+  const contractConfig = {
+    addressOrName: CONTRACT_ADDRESS,
+    contractInterface: abiFile,
+  };
 
+  const [imgURL, setImgURL] = useState('');
+  const { writeAsync: mint, error: mintError } = useContractWrite({
+    ...contractConfig,
+    functionName: 'mint',
+  });
+  const [mintLoading, setMintLoading] = useState(false);
+  const { address } = useAccount();
+  const isConnected = !!address;
+  const [mintedTokenId, setMintedTokenId] = useState(null);
+  const [mintAmount, setMintQuantity] = useState(1);
 
-      const [imgURL, setImgURL] = useState('');
-      const { writeAsync: mint, error: mintError } = useContractWrite({
-        ...contractConfig,
-        functionName: 'mint',
+  const calculateTotalPrice = () => {
+    const pricePerToken = 0.0018008135;
+    return ethers.utils.parseEther((mintAmount * pricePerToken).toString());
+  };
+
+  const handleIncrement = () => {
+    setMintQuantity((prevQuantity) => Math.min(prevQuantity + 1, 200));
+  };
+
+  const handleDecrement = () => {
+    setMintQuantity((prevQuantity) => Math.max(prevQuantity - 1, 1));
+  };
+
+  const onMintClick = async () => {
+    try {
+      setMintLoading(true);
+      const totalPrice = calculateTotalPrice();
+
+      const tx = await mint({
+        args: [mintAmount, { value: totalPrice }],
       });
-      const [mintLoading, setMintLoading] = useState(false);
-      const { address } = useAccount();
-      const isConnected = !!address;
-      const [mintedTokenId, setMintedTokenId] = useState(null);
-      const [mintAmount, setMintQuantity] = useState(1);
 
-      const calculateTotalPrice = () => {
-        const pricePerToken = 0.0018008135; // Adjust the price per token as needed
-        return ethers.utils.parseEther((mintAmount * pricePerToken).toString());
-      };
-
-      const handleIncrement = () => {
-        setMintQuantity((prevQuantity) => Math.min(prevQuantity + 1, 200));
-      };
-
-      const handleDecrement = () => {
-        setMintQuantity((prevQuantity) => Math.max(prevQuantity - 1, 1));
-      };
-
-      const onMintClick = async () => {
-        try {
-          setMintLoading(true);
-          const totalPrice = calculateTotalPrice();
-
-          const tx = await mint({
-            args: [mintAmount, { value: totalPrice }],
-          });
-
-          await tx.wait(); // Wait for the transaction to be mined
-
-        } catch (error) {
-          console.error(error);
-        } finally {
-          setMintLoading(false);
-        }
-      };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      await tx.wait();
+      toast.success('Mint successful! You can view your NFT soon.');
+    } catch (error) {
+      console.error(error);
+      toast.error('Mint unsuccessful! Please try again.');
+    } finally {
+      setMintLoading(false);
+    }
+  };
 
   useEffect(() => {
     async function fetchContractData() {
       try {
-        // Connect to the Ethereum network (replace with your provider details)
         const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
-
-        // Instantiate the contract
         const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
-
-        // Call the 'name' method on the contract
         const name = await contract.name();
-
-        // Call the 'totalSupply' method on the contract
         const supply = await contract.totalSupply();
-
-        // Update the state with the contract name and totalSupply
         setContractName(name);
         setTotalSupply(supply.toNumber());
       } catch (error) {
         console.error('Error fetching contract data:', error);
       } finally {
-        setLoading(false); // Set loading to false regardless of success or failure
+        setLoading(false);
       }
     }
 
     fetchContractData();
-  }, []); // Empty dependency array to run the effect only once
+  }, []);
 
   const maxSupply = 200;
   const remainingSupply = maxSupply - totalSupply;
 
-
-
-
-
-
-
   return (
     <>
+      <ToastContainer />
+
       <header>
-          <img src={MainTextLogo} alt="Logo" className="logo" />
+        <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobodyhead" />
         <div className="connect-button">
           <ConnectButton />
         </div>
@@ -157,11 +114,7 @@ function App() {
         <div className="mainboxwrapper">
           <Container className="container" paddingY="4">
             <div>
-
-                  <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobody" />
-              <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bold' }}>
-
-              </Text>
+              <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobody" />
               <Text className="contractname" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
                 {loading ? 'Loading...' : `Contract Name: ${contractName || 'N/A'}`}
               </Text>
@@ -178,9 +131,9 @@ function App() {
               </Text>
             </div>
 
-              <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
-                5000 PWR Each!
-              </Text>
+            <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
+              5000 PWR Each!
+            </Text>
             <Box marginTop='4' display='flex' alignItems='center' justifyContent='center'>
               <Button
                 marginTop='1'
@@ -211,8 +164,6 @@ function App() {
               </Button>
             </Box>
 
-
-
             <Box marginTop='2' display='flex' alignItems='center' justifyContent='center'>
               <Button
                 disabled={!isConnected || mintLoading}
@@ -227,34 +178,10 @@ function App() {
                 {isConnected ? `Mint ${mintAmount} Now` : ' Mint on (Connect Wallet)'}
               </Button>
             </Box>
-            {mintError && (
-              <Text marginTop='4'>⛔️ Mint unsuccessful! Error message:</Text>
-            )}
-            {mintError && (
-              <pre style={{ marginTop: '8px', color: 'red' }}>
-                <code>{JSON.stringify(mintError, null, ' ')}</code>
-              </pre>
-            )}
-            {mintLoading && <Text marginTop='2'>Minting... please wait</Text>}
-            {mintedTokenId && (
-              <Text marginTop='2'>
-                Mint successful! You can view your NFT{' '}
-                <Link
-                  isExternal
-                  href={getOpenSeaURL()}
-                  color='#ffdc39'
-                  textDecoration='underline'
-                >
-                  Soon!
-                </Link>
-              </Text>
-            )}
-              <Text className="paragraph1" style={{ color: 'white', padding: '20px', textAlign: 'center' }}>
-                &copy; BitMaxx NFT Collection 2023. All rights reserved.
-              </Text>
+            <Text className="paragraph1" style={{ color: 'white', padding: '20px', textAlign: 'center' }}>
+              &copy; BitMaxx NFT Collection 2023. All rights reserved.
+            </Text>
           </Container>
-
-
         </div>
       </div>
     </>

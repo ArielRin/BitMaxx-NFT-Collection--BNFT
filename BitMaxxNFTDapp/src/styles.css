@@ -120,9 +120,20 @@ header {
   margin-right: 10px; /* Adjust the margin as needed */
 }
 
+.logoheader {
+  width: 249px; /* 70% smaller than the original size */
+  height: auto;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
 .logobody {
   display: block; /* Ensures that the image is a block element */
   margin: 0 auto; /* Centers the image horizontally */
   max-width: 100%; /* Ensures the image doesn't exceed its container */
   padding: 20px; /* Add padding as needed */
+}
+
+.logobodyhead {
+  max-width: 20%; /* Ensures the image doesn't exceed its container */
+  padding: 4px; /* Add padding as needed */
 }
