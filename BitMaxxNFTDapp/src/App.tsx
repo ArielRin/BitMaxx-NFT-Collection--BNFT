@@ -26,9 +26,9 @@ import './styles.css';
 import backgroundGif from './gold.gif';
 import MainTextLogo from './headerlogo.png';
 
-const CONTRACT_ADDRESS = '0x27B327315cb8EFBD671FDf82730a3bD25563aea5'; // 2nd maxxtest
-
-// const CONTRACT_ADDRESS = '0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C'; // first maxx test
+const CONTRACT_ADDRESS = '0x0e644A552B34A8F1e276bc91ADA11e25411aEF44'; // 2nd maxxtest
+// const CONTRACT_ADDRESS = '0x27B327315cb8EFBD671FDf82730a3bD25563aea5'; // first maxx test 2
+// const CONTRACT_ADDRESS = '0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C'; // first maxx test 1
 
 const getExplorerLink = () => `https://scan.maxxchain.org/address/${CONTRACT_ADDRESS}`;
 const getOpenSeaURL = () => `https://testnets.opensea.io/assets/goerli/${CONTRACT_ADDRESS}`;
@@ -454,7 +454,7 @@ useEffect(() => {
   </div>
 
   {totalSupply === maxSupply ? (
-    <Text className="soldOutMessage" style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '2xl', color: 'red' }}>
+    <Text className="soldOutMessage" style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '3xl', color: 'red' }}>
       Sold Out!
     </Text>
   ) : (
