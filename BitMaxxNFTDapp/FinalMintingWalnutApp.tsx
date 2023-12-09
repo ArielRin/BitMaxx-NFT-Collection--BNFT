@@ -154,9 +154,9 @@ function App() {
           <Container className="container" paddingY="4">
             <div>
 
-                  <img src={MainTextLogo} alt="Maximus Walnuts" className="logobody" />
+                  <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobody" />
               <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bold' }}>
-                Welcome to the Maximus Walnuts VIP Rewards Club—a haven for nut enthusiasts! As a Max Wombat running with the Maximus Walnut team, you'll dive into a world of premium handpicked walnuts. Enjoy exclusive product launches, personalized gifts, and exceptional service. Join us for a walnut adventure like no other!
+                Welcome to the BitMaxx NFT Collection VIP Rewards Club—a haven for nut enthusiasts! As a Max Wombat running with the Maximus Walnut team, you'll dive into a world of premium handpicked walnuts. Enjoy exclusive product launches, personalized gifts, and exceptional service. Join us for a walnut adventure like no other!
               </Text>
               <Text className="contractname" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
                 {loading ? 'Loading...' : `Contract Name: ${contractName || 'N/A'}`}
@@ -246,7 +246,7 @@ function App() {
               </Text>
             )}
               <Text className="paragraph1" style={{ color: 'white', padding: '20px', textAlign: 'center' }}>
-                &copy; Maximus Walnuts 2023. All rights reserved.
+                &copy; BitMaxx NFT Collection 2023. All rights reserved.
               </Text>
           </Container>
 

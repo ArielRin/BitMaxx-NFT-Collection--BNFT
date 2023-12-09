@@ -5,8 +5,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Maximus Walnuts V.I.P NFT";
-const description = "Maximus Walnuts V.I.P NFT. 500 in total, with 10 Super NFT's up for grabs. ";
+const namePrefix = "BitMaxx NFT Collection V.I.P NFT";
+const description = "BitMaxx NFT Collection V.I.P NFT. 500 in total, with 10 Super NFT's up for grabs. ";
 const baseUri = "ipfs://QmcCPpWTL4FxwqXPJLPqRxBiucUd4ZtEtN2tJN7F4mZT98";
 
 const solanaMetadata = {

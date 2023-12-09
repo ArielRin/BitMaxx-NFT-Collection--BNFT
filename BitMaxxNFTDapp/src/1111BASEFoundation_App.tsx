@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <header>
-        <img src={MainTextLogo} alt="Maximus Walnuts" className="logo" />
+        <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logo" />
         <div className="connect-button">
           <ConnectButton />
         </div>

@@ -118,7 +118,7 @@ function App() {
     <>
 
     <header>
-    <Text className="header-text">Maximus Walnuts Reward NFT</Text>
+    <Text className="header-text">BitMaxx NFT Collection Reward NFT</Text>
     <div className="connect-button">
       <ConnectButton />
     </div>
@@ -140,16 +140,16 @@ function App() {
           </div>
 
                                 <Text className="ttitle" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
-                                  Maximus Walnuts Reward NFT
+                                  BitMaxx NFT Collection Reward NFT
                                 </Text>
             <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bold' }}>
-              Maximus Walnuts Reward NFTs , each priced at 2500 PWR. These non-fungible tokens offer a distinctive opportunity for collectors to own a piece of the Maximus Walnuts legacy.
+              BitMaxx NFT Collection Reward NFTs , each priced at 2500 PWR. These non-fungible tokens offer a distinctive opportunity for collectors to own a piece of the BitMaxx NFT Collection legacy.
             </Text>
             <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bold' }}>
               The collection boasts one legendary NFT, adding an element of exclusivity and rarity to the series.
             </Text>
               <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bold' }}>
-                With only a limited quantity available, each Maximus Walnuts Reward NFT becomes a coveted digital treasure, backed by the blockchain technology that ensures authenticity and scarcity.
+                With only a limited quantity available, each BitMaxx NFT Collection Reward NFT becomes a coveted digital treasure, backed by the blockchain technology that ensures authenticity and scarcity.
               </Text>
 
             <Text className="contractaddr" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
@@ -204,7 +204,7 @@ function App() {
             </Text>
           )}
             <Text className="paragraph1" style={{ color: 'white', padding: '20px', textAlign: 'center' }}>
-              &copy; 2023 Maximus Walnuts. All rights reserved.
+              &copy; 2023 BitMaxx NFT Collection. All rights reserved.
             </Text>
         </Container>
       </div>

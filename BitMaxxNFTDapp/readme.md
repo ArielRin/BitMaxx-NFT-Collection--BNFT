@@ -1,1 +1,1 @@
-# Maximus Walnuts Reward NFT
+# BitMaxx NFT Collection Reward NFT

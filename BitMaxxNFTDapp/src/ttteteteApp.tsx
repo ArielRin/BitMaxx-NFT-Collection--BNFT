@@ -42,8 +42,8 @@ function App() {
   return (
     <>
       <header>
-        <img src={HausLogo1} alt="Maximus Walnuts 2023 Logo" style={{ width: '2%', height: 'auto' }} />
-        <Text className="header-text">Maximus Walnuts 2023</Text>
+        <img src={HausLogo1} alt="BitMaxx NFT Collection 2023 Logo" style={{ width: '2%', height: 'auto' }} />
+        <Text className="header-text">BitMaxx NFT Collection 2023</Text>
         <div className="connect-button">
           <ConnectButton />
         </div>
@@ -59,7 +59,7 @@ function App() {
           <Container className="container" paddingY="4">
             <div>
               <Text className="ttitle" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
-                Maximus Walnuts
+                BitMaxx NFT Collection
               </Text>
               <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bold' }}>
                 Add my Description here once u think of what ya bloody making here to test
