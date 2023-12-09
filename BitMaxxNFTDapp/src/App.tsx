@@ -43,12 +43,12 @@ function App() {
       const [mintAmount, setMintQuantity] = useState(1);
 
       const calculateTotalPrice = () => {
-        const pricePerToken = 0.0102777; // Adjust the price per token as needed
+        const pricePerToken = 0.0018008135; // Adjust the price per token as needed
         return ethers.utils.parseEther((mintAmount * pricePerToken).toString());
       };
 
       const handleIncrement = () => {
-        setMintQuantity((prevQuantity) => Math.min(prevQuantity + 1, 5));
+        setMintQuantity((prevQuantity) => Math.min(prevQuantity + 1, 200));
       };
 
       const handleDecrement = () => {
@@ -127,7 +127,7 @@ function App() {
     fetchContractData();
   }, []); // Empty dependency array to run the effect only once
 
-  const maxSupply = 500;
+  const maxSupply = 200;
   const remainingSupply = maxSupply - totalSupply;
 
 
