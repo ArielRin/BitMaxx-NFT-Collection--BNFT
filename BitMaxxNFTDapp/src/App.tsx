@@ -103,7 +103,7 @@ function App() {
     async function fetchContractData() {
       try {
         // Connect to the Ethereum network (replace with your provider details)
-        const provider = new ethers.providers.JsonRpcProvider('https://bsc-dataseed.binance.org/');
+        const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
 
         // Instantiate the contract
         const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
@@ -205,7 +205,7 @@ function App() {
                   bg: '#ffdc39',
                 }}
                 onClick={handleIncrement}
-                disabled={!isConnected || mintLoading || mintAmount === 5}
+                disabled={!isConnected || mintLoading || mintAmount === 200}
               >
                 +
               </Button>

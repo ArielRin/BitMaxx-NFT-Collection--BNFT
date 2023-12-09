@@ -18,7 +18,7 @@ MaxxChain is the underlying blockchain network powering the BitMaxx NFT Collecti
 
 Exciting news! The BitMaxx NFT Collection will soon be linked to a reward platform. Stay tuned for further announcements on the details of the rewards you can earn by owning and participating in the BitMaxx NFT ecosystem.
 
-![BitMaxx NFT Collection](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/master/graph.png)
+![BitMaxx NFT Collection](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/master/graph.jpg)
 ## How to Purchase
 
 To acquire a unique piece from the BitMaxx NFT Collection, simply follow these steps:

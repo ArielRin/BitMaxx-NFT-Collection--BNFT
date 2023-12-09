@@ -18,10 +18,10 @@ const maxxChain: Chain = {
     symbol: 'PWR',
   },
   rpcUrls: {
-    default: 'https://rpc.maxxchain.org',
+    default: 'https://mainrpc4.maxxchain.org/',
   },
   blockExplorers: {
-    default: { name: 'Maxx Explorer', url: 'https://scan.maxxchain.org' },
+    default: { name: 'Maxx Explorer', url: 'https://scan.maxxchain.org/' },
   },
   testnet: false,
 };
@@ -49,7 +49,7 @@ const { chains, provider } = configureChains(
     jsonRpcProvider({
       rpc: () => {
         return {
-          http: "https://rpc.maxxchain.org/",
+          http: "https://mainrpc4.maxxchain.org/",
         };
       },
     }),
