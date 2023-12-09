@@ -1,6 +1,8 @@
 # BitMaxx NFT Collection
 
 
+BetaTesting Dapp https://gentle-liger-4162d5.netlify.app/
+
 
 ## TEST CHEAP MINT 0.000001 PWR
 https://scan.maxxchain.org/address/0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C/contracts#address-tabs

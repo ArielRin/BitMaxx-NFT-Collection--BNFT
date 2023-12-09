@@ -64,7 +64,7 @@ header {
     padding: 2px;
     flex-direction: column;
     margin-top: 2px;
-
+}
 .bodywrapper {
   display: flex;
   justify-content: center;
