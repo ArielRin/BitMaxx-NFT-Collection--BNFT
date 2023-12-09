@@ -1,8 +1,8 @@
 {
   "name": "BitMaxx NFT Collection #6",
   "description": "a limited edition series that pushes the boundaries of digital art and innovation. Each NFT in this exclusive collection is priced at 5000PWR, representing a fusion of cutting-edge technology and artistic expression. With a total supply restricted to just 200 minted on the groundbreaking Maxx Chain.",
-  "image": "BitMaxxhttps://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/blob/master/Assets/Image/6.png",
-  "animation_url": "BitMaxxhttps://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/blob/master/Assets/Image/3.mp4",
+  "image": "https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/blob/master/Assets/Image/6.png",
+  "animation_url": "https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/blob/master/Assets/Image/3.mp4",
   "dna": "52004be206c48f117b81999d3a6bbf946ccf7d4e",
   "edition": 6,
   "date": 1700015402684,

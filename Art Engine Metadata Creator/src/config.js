@@ -7,7 +7,7 @@ const network = NETWORK.eth;
 // General metadata for Ethereum
 const namePrefix = "BitMaxx NFT Collection";
 const description = "a limited edition series that pushes the boundaries of digital art and innovation. Each NFT in this exclusive collection is priced at 5000PWR, representing a fusion of cutting-edge technology and artistic expression. With a total supply restricted to just 200 minted on the groundbreaking Maxx Chain ";
-const baseUri = "https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/blob/master/Assets/Metadata";
+const baseUri = "https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/blob/master/Assets/Metadata/";
 
 const solanaMetadata = {
   symbol: "BNFT",
