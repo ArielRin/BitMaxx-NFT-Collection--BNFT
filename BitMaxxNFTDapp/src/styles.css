@@ -52,7 +52,7 @@ header {
   background-color: #222; /* Change the background color as needed */
 }
 .mainboxwrapper {
-    background-color: rgba(12, 12, 12, 0.7);
+    background-color: rgba(12, 12, 12, 0.85);
     min-height: 200px;
     width: 970%;
     margin: 0 auto;

@@ -60,10 +60,12 @@ function App() {
     functionName: 'pause',
   });
 
-  const calculateTotalPrice = () => {
-    const pricePerToken = 0.0018008135;
-    return ethers.utils.parseEther((mintAmount * pricePerToken).toString());
-  };
+
+    const calculateTotalPrice = () => {
+      const pricePerToken = parseFloat(cost);
+      return ethers.utils.parseEther((mintAmount * pricePerToken).toString());
+    };
+
 
     const maxSupply = 200;
     const remainingSupply = maxSupply - totalSupply;
@@ -304,7 +306,7 @@ const [isRevealed, setIsRevealed] = useState(false);
           <Container className="container" paddingY="4">
           <Tabs isFitted variant="enclosed">
             <TabList>
-              <Tab style={{ fontWeight: 'bold', color: 'white' }}>About</Tab>
+              <Tab style={{ fontWeight: 'bold', color: 'white' }}>Home</Tab>
               <Tab style={{ fontWeight: 'bold', color: 'white' }}>Mint</Tab>
               <Tab style={{ fontWeight: 'bold', color: 'white' }}>Stats</Tab>
             </TabList>
@@ -318,6 +320,14 @@ const [isRevealed, setIsRevealed] = useState(false);
                 <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
                   BitMaxx About our NFTs
                 </Text>
+
+                <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
+                Welcome to the BitMaxx NFT Collection! This collection is built on the MaxxChain network, bringing you a seamless and secure NFT experience. Each NFT in this collection is priced at 5000 PWR, making it an exclusive addition to your digital assets.
+                </Text>
+
+
+
+
 
                 <Text className="pauseStatus" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold', color: isPaused ? 'red' : 'green' }}>
                   {isPaused ? 'NFT Minting currently Paused' : 'NFT Minting is Open!'}
@@ -349,7 +359,7 @@ const [isRevealed, setIsRevealed] = useState(false);
               </div>
 
               <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
-                5000 PWR Each!
+                {cost} PWR Each!
               </Text>
               <Box marginTop='4' display='flex' alignItems='center' justifyContent='center'>
                 <Button
