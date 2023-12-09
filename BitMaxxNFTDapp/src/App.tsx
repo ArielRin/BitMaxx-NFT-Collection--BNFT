@@ -116,7 +116,7 @@ function App() {
             <div>
               <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobody" />
               <Text className="contractname" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                {loading ? 'Loading...' : `Contract Name: ${contractName || 'N/A'}`}
+                {loading ? 'Loading...' : `${contractName || 'N/A'}`}
               </Text>
               <Text className="totalSupply" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
                 {loading ? 'Loading...' : `Sold : ${totalSupply} / ${maxSupply}  `}
