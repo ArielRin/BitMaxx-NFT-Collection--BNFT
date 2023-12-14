@@ -26,7 +26,7 @@ import './styles.css';
 import backgroundGif from './sea.gif';
 import MainTextLogo from './headerlogo.png';
 import yourVideo from 'https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/raw/final/1yt.mp4';
-import yourGif from 'https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/raw/final/1.gif';
+import yourGif from './nft.gif';
 
 const CONTRACT_ADDRESS = '0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38';
 
