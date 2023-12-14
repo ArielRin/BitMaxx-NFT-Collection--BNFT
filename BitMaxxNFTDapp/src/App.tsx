@@ -23,10 +23,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import abiFile from './abiFile.json';
 import './styles.css';
-import backgroundGif from './gold.gif';
+import backgroundGif from './sea.gif';
 import MainTextLogo from './headerlogo.png';
 
-const CONTRACT_ADDRESS = '0x0e644A552B34A8F1e276bc91ADA11e25411aEF44'; // 2nd maxxtest
+import btm from './btm.png';
+const CONTRACT_ADDRESS = '0xe2e7e9E29E4Ec0b630c52Ea8A90E7C456733BAaF'; // 2nd maxxtest
 // const CONTRACT_ADDRESS = '0x27B327315cb8EFBD671FDf82730a3bD25563aea5'; // first maxx test 2
 // const CONTRACT_ADDRESS = '0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C'; // first maxx test 1
 
@@ -408,7 +409,7 @@ useEffect(() => {
               <TabPanel>
 
               <div>
-                <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobody" />
+                <img src={btm} alt="BitMaxx NFT Collection" className="logobody" />
 
                 <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
                   BitMaxx About our NFTs
@@ -433,7 +434,7 @@ useEffect(() => {
               </TabPanel>
               <TabPanel>
   <div>
-    <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobody" />
+    <img src={btm} alt="BitMaxx NFT Collection" className="logobody" />
     <Text className="contractname" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
       {loading ? 'Loading...' : `${contractName || 'N/A'}`}
     </Text>
@@ -466,9 +467,9 @@ useEffect(() => {
         <Button
           marginTop='1'
           textColor='white'
-          bg='#ffc114'
+          bg='#058ba1'
           _hover={{
-            bg: '#ffdc39',
+            bg: '#4d9795',
           }}
           onClick={handleDecrement}
           disabled={!isConnected || mintLoading || mintAmount === 1}
@@ -481,9 +482,9 @@ useEffect(() => {
         <Button
           marginTop='1'
           textColor='white'
-          bg='#ffc114'
+          bg='#058ba1'
           _hover={{
-            bg: '#ffdc39',
+            bg: '#4d9795',
           }}
           onClick={handleIncrement}
           disabled={!isConnected || mintLoading || mintAmount === 200}
@@ -497,9 +498,9 @@ useEffect(() => {
           marginTop='6'
           onClick={onMintClick}
           textColor='white'
-          bg='#ffc114'
+          bg='#058ba1'
           _hover={{
-            bg: '#ffdc39',
+            bg: '#4d9795',
           }}
         >
           {isConnected ? `Mint ${mintAmount} Now` : ' Mint on (Connect Wallet)'}
@@ -543,9 +544,9 @@ useEffect(() => {
                   <Button
                     onClick={onRevealClick}
                     textColor="white"
-                    bg={isRevealed ? '#666' : '#ff5555'}
+                    bg={isRevealed ? '#666' : '#058ba1'}
                     _hover={{
-                      bg: isRevealed ? '#666' : '#ff6b6b',
+                      bg: isRevealed ? '#666' : '#4d9795',
                     }}
                     style={{ marginRight: '1rem' }}
                     >
@@ -555,9 +556,9 @@ useEffect(() => {
                   <Button
                     onClick={onTogglePauseClick}
                       textColor="white"
-                      bg="#ff5555"
+                      bg="#058ba1"
                       _hover={{
-                        bg: '#ff6b6b',
+                        bg: '#4d9795',
                       }}
                       >
                       {isPaused ? 'UnPause Minting ' : 'Pause Minting'}
@@ -589,9 +590,9 @@ useEffect(() => {
                 <Button
                  onClick={onSetCostClick}
                  textColor="white"
-                 bg="#ff5555"
+                 bg="#058ba1"
                  _hover={{
-                   bg: '#ff6b6b',
+                   bg: '#4d9795',
                  }}
                  >
                  Set Cost
@@ -602,9 +603,9 @@ useEffect(() => {
                <Button
                                        onClick={onWithdrawClick}
                                        textColor="white"
-                                       bg="#ff5555"
+                                       bg="#058ba1"
                                        _hover={{
-                                         bg: '#ff6b6b',
+                                         bg: '#4d9795',
                                        }}
                                      >
                                        {withdrawLoading ? 'Withdrawing...' : 'Withdraw Funds (Only Owner)'}
