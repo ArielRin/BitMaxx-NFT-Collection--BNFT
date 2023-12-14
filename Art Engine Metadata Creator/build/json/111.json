@@ -1,10 +1,10 @@
 {
   "name": "BitMaxx NFT Collection #111",
-  "description": "a limited edition series that pushes the boundaries of digital art and innovation. Each NFT in this exclusive collection is priced at 5000PWR, representing a fusion of cutting-edge technology and artistic expression. With a total supply restricted to just 200 minted on the groundbreaking Maxx Chain.",
-  "image": "https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/blob/master/Assets/Image/111.png",
-  "dna": "fc44b68048a3921db0f7704a204a73b9cdf9fb25",
+  "description": "BitMaxx NFT Collection",
+  "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/111.mp4",
+  "dna": "205d59aff1ac95af334295f0ac48ac830958657a",
   "edition": 111,
-  "date": 1700015418579,
+  "date": 1702511873165,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,12 +12,12 @@
     },
     {
       "trait_type": "Image",
-      "value": "BitmaxxNFTCollection"
+      "value": "BitMaxx NFT"
     },
     {
       "trait_type": "Edition",
-      "value": "Silver"
+      "value": "Standard"
     }
   ],
-  "compiler": "ArielRyn Art Generation 2023"
+  "compiler": "Seans Art Engine"
 }

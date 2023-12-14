@@ -1,23 +1,23 @@
-BitMaxx{
-  "name": "LegendaryRare AF BitMaxx NFT Collection #142",
-  "description": "BitMaxx NFT Collection. 200 in total, with 1 legendary NFT AND YOU GOT IT! This exclusive digital collectible is a true gem, boasting a unique combination of intricate artistry and scarcity that sets it apart in the vast NFT landscape. BitMaxx employs state-of-the-art blockchain technology to ensure the authenticity and rarity of each NFT, and my legendary piece stands as a testament to the platform's commitment to delivering unparalleled value to its community.The rarity of my BitMaxx legendary NFT is underscored by its limited edition status, with only a handful of these mesmerizing digital assets in existence. Each element of this NFT, from its meticulously crafted design to its scarcity in the broader NFT ecosystem, contributes to its status as a highly sought-after and one-of-a-kind creation. As a proud owner of this legendary BitMaxx NFT, I am not only part of an exclusive community of collectors but also a custodian of a digital masterpiece that transcends the ordinary, reflecting the intersection of art, technology, and rarity in the captivating world of NFTs",
-  "image": "https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/blob/master/Assets/Image/142.png",
-  "dna": "52a467ad26c53e4f89febce7e529dec4fad4df1f",
+{
+  "name": "BitMaxx NFT Collection #142",
+  "description": "BitMaxx NFT Collection",
+  "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/142.mp4",
+  "dna": "b33a7185ac48d23de34b4201da20a068bd9d3264",
   "edition": 142,
-  "date": 1700015423433,
+  "date": 1702511874740,
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Legendary"
+      "value": "Standard"
     },
     {
       "trait_type": "Image",
-      "value": "Legendary NFT"
+      "value": "BitMaxx NFT"
     },
     {
       "trait_type": "Edition",
-      "value": "Legendary"
+      "value": "Standard"
     }
   ],
-  "compiler": "ArielRyn Art Generation 2023"
+  "compiler": "Seans Art Engine"
 }
