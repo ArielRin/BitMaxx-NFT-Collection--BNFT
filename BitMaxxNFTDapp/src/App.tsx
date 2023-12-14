@@ -25,6 +25,7 @@ import abiFile from './abiFile.json';
 import './styles.css';
 import backgroundGif from './gold.gif';
 import MainTextLogo from './headerlogo.png';
+import yourVideo from 'https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/raw/final/1.mp4';
 
 const CONTRACT_ADDRESS = '0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C';
 
@@ -315,7 +316,15 @@ const [isRevealed, setIsRevealed] = useState(false);
               <TabPanel>
 
               <div>
-                <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobody" />
+              {/* Display the video in the Home tab */}
+                  <video controls autoPlay loop width="100%" height="auto" style={{ borderRadius: '40px' }}>
+                    <source
+                      src="https://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny.ipfs.dweb.link/1.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+
 
                 <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
                   BitMaxx About our NFTs
