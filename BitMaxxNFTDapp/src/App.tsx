@@ -27,7 +27,7 @@ import backgroundGif from './sea.gif';
 import MainTextLogo from './headerlogo.png';
 
 import btm from './btm.png';
-const CONTRACT_ADDRESS = '0xe2e7e9E29E4Ec0b630c52Ea8A90E7C456733BAaF'; // 2nd maxxtest
+const CONTRACT_ADDRESS = '0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38'; // 2nd maxxtest
 // const CONTRACT_ADDRESS = '0x27B327315cb8EFBD671FDf82730a3bD25563aea5'; // first maxx test 2
 // const CONTRACT_ADDRESS = '0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C'; // first maxx test 1
 
