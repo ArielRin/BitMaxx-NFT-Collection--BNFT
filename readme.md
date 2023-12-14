@@ -1,7 +1,7 @@
 # BitMaxx NFT Collection
 
 
-BetaTesting Dapp nft.bitmaxx.io/
+BetaTesting Dapp https://nft.bitmaxx.io/
 
 
 ![BitMaxx NFT Collection](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/master/twitter.jpg)
