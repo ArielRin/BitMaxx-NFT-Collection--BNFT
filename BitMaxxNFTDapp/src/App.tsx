@@ -25,9 +25,10 @@ import abiFile from './abiFile.json';
 import './styles.css';
 import backgroundGif from './sea.gif';
 import MainTextLogo from './headerlogo.png';
-import yourVideo from 'https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/raw/final/1.mp4';
+import yourVideo from 'https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/raw/final/1yt.mp4';
+import yourGif from 'https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/raw/final/1.gif';
 
-const CONTRACT_ADDRESS = '0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C';
+const CONTRACT_ADDRESS = '0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38';
 
 const getExplorerLink = () => `https://scan.maxxchain.org/address/${CONTRACT_ADDRESS}`;
 const getOpenSeaURL = () => `https://testnets.opensea.io/assets/goerli/${CONTRACT_ADDRESS}`;
@@ -316,17 +317,8 @@ const [isRevealed, setIsRevealed] = useState(false);
               <TabPanel>
 
               <div>
-                <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobody" />
-                <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobody" />
 
-                    {/* Display the video in the Home tab */}
-                    <video controls width="100%" height="auto">
-                      <source
-                        src="https://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny.ipfs.dweb.link/1.mp4"
-                        type="video/mp4"
-                      />
-                      Your browser does not support the video tag.
-                    </video>
+                  <img src={yourGif} alt="Your Gif" style={{ width: '100%', borderRadius: '30px' }} />
 
 
                 <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
