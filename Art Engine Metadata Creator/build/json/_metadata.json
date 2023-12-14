@@ -2,7 +2,7 @@
   {
     "name": "BitMaxx NFT Collection #1",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/1.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/1.mp4",
     "dna": "35f9151fe727ecb790a56f5ac85bf5fa0dbeb531",
     "edition": 1,
     "date": 1702511867560,
@@ -25,7 +25,7 @@
   {
     "name": "BitMaxx NFT Collection #2",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/2.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/2.mp4",
     "dna": "c9318a05b26a9cbb8061a9553536cf6f81537a2f",
     "edition": 2,
     "date": 1702511867618,
@@ -48,7 +48,7 @@
   {
     "name": "BitMaxx NFT Collection #3",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/3.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/3.mp4",
     "dna": "2a5d3eb44019a86e917ec1c61b0ce16e8fa22090",
     "edition": 3,
     "date": 1702511867675,
@@ -71,7 +71,7 @@
   {
     "name": "BitMaxx NFT Collection #4",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/4.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/4.mp4",
     "dna": "7b0b88b5add737eba9f946cba03b97961f5285eb",
     "edition": 4,
     "date": 1702511867729,
@@ -94,7 +94,7 @@
   {
     "name": "BitMaxx NFT Collection #5",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/5.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/5.mp4",
     "dna": "b62456af2dc97f23895dd15165352ea5598fc7f8",
     "edition": 5,
     "date": 1702511867782,
@@ -117,7 +117,7 @@
   {
     "name": "BitMaxx NFT Collection #6",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/6.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/6.mp4",
     "dna": "d5ac1209efca1a1d06234f1a0adf52307d979d47",
     "edition": 6,
     "date": 1702511867830,
@@ -140,7 +140,7 @@
   {
     "name": "BitMaxx NFT Collection #7",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/7.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/7.mp4",
     "dna": "f304f53c434491e71abe933e391ec574c797ad1e",
     "edition": 7,
     "date": 1702511867881,
@@ -163,7 +163,7 @@
   {
     "name": "BitMaxx NFT Collection #8",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/8.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/8.mp4",
     "dna": "066b7689cc6d6f1fd50a56b1c4a4414bec8036ba",
     "edition": 8,
     "date": 1702511867930,
@@ -186,7 +186,7 @@
   {
     "name": "BitMaxx NFT Collection #9",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/9.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/9.mp4",
     "dna": "83b8c993761f6dcadbb65e73e5ede189deacefcd",
     "edition": 9,
     "date": 1702511867979,
@@ -209,7 +209,7 @@
   {
     "name": "BitMaxx NFT Collection #10",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/10.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/10.mp4",
     "dna": "5b0e61f2d678db48430efd74381705abfb346c95",
     "edition": 10,
     "date": 1702511868032,
@@ -232,7 +232,7 @@
   {
     "name": "BitMaxx NFT Collection #11",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/11.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/11.mp4",
     "dna": "c6143c39c8b62d51577acf6cd72e2c484e668fe5",
     "edition": 11,
     "date": 1702511868084,
@@ -255,7 +255,7 @@
   {
     "name": "BitMaxx NFT Collection #12",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/12.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/12.mp4",
     "dna": "aac605667842be69be236e50765a3b34c89cd2c1",
     "edition": 12,
     "date": 1702511868134,
@@ -278,7 +278,7 @@
   {
     "name": "BitMaxx NFT Collection #13",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/13.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/13.mp4",
     "dna": "8568d5125ba028df89d38c572fe938956ab091cc",
     "edition": 13,
     "date": 1702511868185,
@@ -301,7 +301,7 @@
   {
     "name": "BitMaxx NFT Collection #14",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/14.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/14.mp4",
     "dna": "f4a8bb7cbb064addef308890c8cdd64da9614cad",
     "edition": 14,
     "date": 1702511868235,
@@ -324,7 +324,7 @@
   {
     "name": "BitMaxx NFT Collection #15",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/15.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/15.mp4",
     "dna": "c0bf4e81c38068a3fe2278af5114384ac9bb045a",
     "edition": 15,
     "date": 1702511868293,
@@ -347,7 +347,7 @@
   {
     "name": "BitMaxx NFT Collection #16",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/16.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/16.mp4",
     "dna": "01ff89fc61d89e9f6689ed02411e8ff3a8c08d9e",
     "edition": 16,
     "date": 1702511868344,
@@ -370,7 +370,7 @@
   {
     "name": "BitMaxx NFT Collection #17",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/17.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/17.mp4",
     "dna": "205a789c962a980b2cdbc94615851a209f5f3289",
     "edition": 17,
     "date": 1702511868393,
@@ -393,7 +393,7 @@
   {
     "name": "BitMaxx NFT Collection #18",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/18.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/18.mp4",
     "dna": "8b108de51a599ffe8b000fa78be3f4ae849e85b2",
     "edition": 18,
     "date": 1702511868442,
@@ -416,7 +416,7 @@
   {
     "name": "BitMaxx NFT Collection #19",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/19.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/19.mp4",
     "dna": "4169dc2a26e2ea3bcf99b26f841281de90ff9492",
     "edition": 19,
     "date": 1702511868492,
@@ -439,7 +439,7 @@
   {
     "name": "BitMaxx NFT Collection #20",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/20.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/20.mp4",
     "dna": "750b5f7e229fc6d5473f6e36553f1c65dbdf8b15",
     "edition": 20,
     "date": 1702511868545,
@@ -462,7 +462,7 @@
   {
     "name": "BitMaxx NFT Collection #21",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/21.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/21.mp4",
     "dna": "37c0d78dc380426bed209c17cb4cfef671146714",
     "edition": 21,
     "date": 1702511868597,
@@ -485,7 +485,7 @@
   {
     "name": "BitMaxx NFT Collection #22",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/22.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/22.mp4",
     "dna": "dcd6ad1888b47374e4d966a27d9c5baeedaaca57",
     "edition": 22,
     "date": 1702511868648,
@@ -508,7 +508,7 @@
   {
     "name": "BitMaxx NFT Collection #23",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/23.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/23.mp4",
     "dna": "733a84f0080e78b47cea21bac0571f5a02c6be64",
     "edition": 23,
     "date": 1702511868699,
@@ -531,7 +531,7 @@
   {
     "name": "BitMaxx NFT Collection #24",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/24.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/24.mp4",
     "dna": "79efc9a1bf08a0cdd5fc25ad7fd07abe0f5cc60a",
     "edition": 24,
     "date": 1702511868748,
@@ -554,7 +554,7 @@
   {
     "name": "BitMaxx NFT Collection #25",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/25.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/25.mp4",
     "dna": "cdb249d774e3eec2d52f1c05f57a3af6e21af43e",
     "edition": 25,
     "date": 1702511868808,
@@ -577,7 +577,7 @@
   {
     "name": "BitMaxx NFT Collection #26",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/26.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/26.mp4",
     "dna": "21e26a736654a754b3f1bc37e73aacc19a52fe16",
     "edition": 26,
     "date": 1702511868860,
@@ -600,7 +600,7 @@
   {
     "name": "BitMaxx NFT Collection #27",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/27.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/27.mp4",
     "dna": "2be7f01bba099f7b1d27a52bbe8ec6304f8eb081",
     "edition": 27,
     "date": 1702511868912,
@@ -623,7 +623,7 @@
   {
     "name": "BitMaxx NFT Collection #28",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/28.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/28.mp4",
     "dna": "5448521e033f26916fc79a821d92422ec27e614e",
     "edition": 28,
     "date": 1702511868962,
@@ -646,7 +646,7 @@
   {
     "name": "BitMaxx NFT Collection #29",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/29.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/29.mp4",
     "dna": "f4918bca788bf7a622ee22734cb485c4c95a020c",
     "edition": 29,
     "date": 1702511869011,
@@ -669,7 +669,7 @@
   {
     "name": "BitMaxx NFT Collection #30",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/30.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/30.mp4",
     "dna": "307af3bb2f0ad2dd0a730f0ec4e628d04d51451d",
     "edition": 30,
     "date": 1702511869066,
@@ -692,7 +692,7 @@
   {
     "name": "BitMaxx NFT Collection #31",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/31.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/31.mp4",
     "dna": "b6415b1a81ab4c024f68584129e1ce0d9ca9d699",
     "edition": 31,
     "date": 1702511869118,
@@ -715,7 +715,7 @@
   {
     "name": "BitMaxx NFT Collection #32",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/32.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/32.mp4",
     "dna": "8490364f5dd1d46ff081652f20e47465aea02ec9",
     "edition": 32,
     "date": 1702511869168,
@@ -738,7 +738,7 @@
   {
     "name": "BitMaxx NFT Collection #33",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/33.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/33.mp4",
     "dna": "5d9efc69417bbdcfbb9b48df9874b86aa79cfa76",
     "edition": 33,
     "date": 1702511869217,
@@ -761,7 +761,7 @@
   {
     "name": "BitMaxx NFT Collection #34",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/34.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/34.mp4",
     "dna": "0692cdab9dee6a4d220ca218109dbb7854f1b1f0",
     "edition": 34,
     "date": 1702511869267,
@@ -784,7 +784,7 @@
   {
     "name": "BitMaxx NFT Collection #35",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/35.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/35.mp4",
     "dna": "dd1e9545bd0dab08803dfbacce33eb1068905299",
     "edition": 35,
     "date": 1702511869321,
@@ -807,7 +807,7 @@
   {
     "name": "BitMaxx NFT Collection #36",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/36.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/36.mp4",
     "dna": "9a6db0040dde560493b644881b118514bc19deeb",
     "edition": 36,
     "date": 1702511869373,
@@ -830,7 +830,7 @@
   {
     "name": "BitMaxx NFT Collection #37",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/37.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/37.mp4",
     "dna": "232420ed856acdbf8b4a4eb4253df639c261f2fe",
     "edition": 37,
     "date": 1702511869422,
@@ -853,7 +853,7 @@
   {
     "name": "BitMaxx NFT Collection #38",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/38.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/38.mp4",
     "dna": "8e3b3326d2aad9bc0ab6842399914f546eef7554",
     "edition": 38,
     "date": 1702511869471,
@@ -876,7 +876,7 @@
   {
     "name": "BitMaxx NFT Collection #39",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/39.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/39.mp4",
     "dna": "3d3a34b3ca5cab66d04c28aad6acdd7451b7a83a",
     "edition": 39,
     "date": 1702511869520,
@@ -899,7 +899,7 @@
   {
     "name": "BitMaxx NFT Collection #40",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/40.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/40.mp4",
     "dna": "5a7815c96ae3e1d01ee767f1596189a1c0d24788",
     "edition": 40,
     "date": 1702511869574,
@@ -922,7 +922,7 @@
   {
     "name": "BitMaxx NFT Collection #41",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/41.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/41.mp4",
     "dna": "02e3d62f19e2bdebee8bf8169b2e6112aedb54e3",
     "edition": 41,
     "date": 1702511869623,
@@ -945,7 +945,7 @@
   {
     "name": "BitMaxx NFT Collection #42",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/42.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/42.mp4",
     "dna": "ebd910077ff0bb0920cfea6cf872cfc6912a2dc1",
     "edition": 42,
     "date": 1702511869677,
@@ -968,7 +968,7 @@
   {
     "name": "BitMaxx NFT Collection #43",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/43.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/43.mp4",
     "dna": "f5cae654c99603d390fd848363a95e2206574ab8",
     "edition": 43,
     "date": 1702511869726,
@@ -991,7 +991,7 @@
   {
     "name": "BitMaxx NFT Collection #44",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/44.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/44.mp4",
     "dna": "7f1edfa1fb2e147125e939e898265510dc05a608",
     "edition": 44,
     "date": 1702511869775,
@@ -1014,7 +1014,7 @@
   {
     "name": "BitMaxx NFT Collection #45",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/45.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/45.mp4",
     "dna": "59dae92e13e10eccb79453836040e86de50cae3b",
     "edition": 45,
     "date": 1702511869828,
@@ -1037,7 +1037,7 @@
   {
     "name": "BitMaxx NFT Collection #46",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/46.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/46.mp4",
     "dna": "ae5a7321c760aaedd36f13f86ce888d1ad767f26",
     "edition": 46,
     "date": 1702511869878,
@@ -1060,7 +1060,7 @@
   {
     "name": "BitMaxx NFT Collection #47",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/47.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/47.mp4",
     "dna": "dcf79d5a971c85813aae54b704d16814e52c7bad",
     "edition": 47,
     "date": 1702511869927,
@@ -1083,7 +1083,7 @@
   {
     "name": "BitMaxx NFT Collection #48",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/48.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/48.mp4",
     "dna": "90afa0f3538b42fecb3a5048430e3a7ee6d8a5c7",
     "edition": 48,
     "date": 1702511869976,
@@ -1106,7 +1106,7 @@
   {
     "name": "BitMaxx NFT Collection #49",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/49.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/49.mp4",
     "dna": "a2b6390e003906ba564f6e7dc6f14d6e6a13cb88",
     "edition": 49,
     "date": 1702511870025,
@@ -1129,7 +1129,7 @@
   {
     "name": "BitMaxx NFT Collection #50",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/50.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/50.mp4",
     "dna": "6b01eafe38ce02ef59636da65700a43b6cc97e69",
     "edition": 50,
     "date": 1702511870077,
@@ -1152,7 +1152,7 @@
   {
     "name": "BitMaxx NFT Collection #51",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/51.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/51.mp4",
     "dna": "0f901fc992861b0d6568ad14589d6ea6bf8597df",
     "edition": 51,
     "date": 1702511870127,
@@ -1175,7 +1175,7 @@
   {
     "name": "BitMaxx NFT Collection #52",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/52.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/52.mp4",
     "dna": "895564a702481428e4fece1f9bcfefdaeb55d133",
     "edition": 52,
     "date": 1702511870176,
@@ -1198,7 +1198,7 @@
   {
     "name": "BitMaxx NFT Collection #53",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/53.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/53.mp4",
     "dna": "5bb4374c30eb1a889b3c2f925774123ee9c0962a",
     "edition": 53,
     "date": 1702511870227,
@@ -1221,7 +1221,7 @@
   {
     "name": "BitMaxx NFT Collection #54",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/54.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/54.mp4",
     "dna": "db36423d73e38978a727c19be02d2dfd9a93e8f2",
     "edition": 54,
     "date": 1702511870277,
@@ -1244,7 +1244,7 @@
   {
     "name": "BitMaxx NFT Collection #55",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/55.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/55.mp4",
     "dna": "ae221660963119e89b53590b987d5b8aa4116ef5",
     "edition": 55,
     "date": 1702511870332,
@@ -1267,7 +1267,7 @@
   {
     "name": "BitMaxx NFT Collection #56",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/56.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/56.mp4",
     "dna": "64b04593baca1ef09ece29eb38730203d5411819",
     "edition": 56,
     "date": 1702511870380,
@@ -1290,7 +1290,7 @@
   {
     "name": "BitMaxx NFT Collection #57",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/57.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/57.mp4",
     "dna": "da02583b14e4b6dd599e6b886df3286b21afa64e",
     "edition": 57,
     "date": 1702511870434,
@@ -1313,7 +1313,7 @@
   {
     "name": "BitMaxx NFT Collection #58",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/58.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/58.mp4",
     "dna": "501eceeeb280373d71e7326c689c5b913a069fcd",
     "edition": 58,
     "date": 1702511870482,
@@ -1336,7 +1336,7 @@
   {
     "name": "BitMaxx NFT Collection #59",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/59.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/59.mp4",
     "dna": "5409146cc1dfd9713c4d8399246b3ecc0d840558",
     "edition": 59,
     "date": 1702511870531,
@@ -1359,7 +1359,7 @@
   {
     "name": "BitMaxx NFT Collection #60",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/60.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/60.mp4",
     "dna": "26f83cd56c895164c0e63648840112b5d8be69ee",
     "edition": 60,
     "date": 1702511870586,
@@ -1382,7 +1382,7 @@
   {
     "name": "BitMaxx NFT Collection #61",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/61.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/61.mp4",
     "dna": "f5aec7acd2ac79cceaac4c66a8838f6069128182",
     "edition": 61,
     "date": 1702511870635,
@@ -1405,7 +1405,7 @@
   {
     "name": "BitMaxx NFT Collection #62",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/62.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/62.mp4",
     "dna": "d773fcf941d10be13e7e86498d487b667d02c6a5",
     "edition": 62,
     "date": 1702511870686,
@@ -1428,7 +1428,7 @@
   {
     "name": "BitMaxx NFT Collection #63",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/63.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/63.mp4",
     "dna": "54b93c670aa62748b2bb2c33b4fc29065ced51ac",
     "edition": 63,
     "date": 1702511870740,
@@ -1451,7 +1451,7 @@
   {
     "name": "BitMaxx NFT Collection #64",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/64.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/64.mp4",
     "dna": "fe0f41000c50802b2f4e7d87c2146e2d030d5c21",
     "edition": 64,
     "date": 1702511870789,
@@ -1474,7 +1474,7 @@
   {
     "name": "BitMaxx NFT Collection #65",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/65.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/65.mp4",
     "dna": "be96d614036656627ea23f5777fbea54ac15586c",
     "edition": 65,
     "date": 1702511870845,
@@ -1497,7 +1497,7 @@
   {
     "name": "BitMaxx NFT Collection #66",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/66.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/66.mp4",
     "dna": "6f7edf997d9f2d4f22785fc87a55bfb7d7d9b25f",
     "edition": 66,
     "date": 1702511870894,
@@ -1520,7 +1520,7 @@
   {
     "name": "BitMaxx NFT Collection #67",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/67.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/67.mp4",
     "dna": "2341b43c4dcd61a3110b67d76e290b2d9b76f4d7",
     "edition": 67,
     "date": 1702511870943,
@@ -1543,7 +1543,7 @@
   {
     "name": "BitMaxx NFT Collection #68",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/68.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/68.mp4",
     "dna": "ddee6070649ddb223976e25b491caaac23465ca7",
     "edition": 68,
     "date": 1702511870992,
@@ -1566,7 +1566,7 @@
   {
     "name": "BitMaxx NFT Collection #69",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/69.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/69.mp4",
     "dna": "8635b92831203b6588c2241205f5d856977d16b3",
     "edition": 69,
     "date": 1702511871040,
@@ -1589,7 +1589,7 @@
   {
     "name": "BitMaxx NFT Collection #70",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/70.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/70.mp4",
     "dna": "9449b76835c251a217c117686375a305c1525f41",
     "edition": 70,
     "date": 1702511871094,
@@ -1612,7 +1612,7 @@
   {
     "name": "BitMaxx NFT Collection #71",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/71.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/71.mp4",
     "dna": "8997248114485f8c52f13f8241553f909f425014",
     "edition": 71,
     "date": 1702511871146,
@@ -1635,7 +1635,7 @@
   {
     "name": "BitMaxx NFT Collection #72",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/72.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/72.mp4",
     "dna": "29493d5a7cc74d72b98482c3dacb9c324ee39b7b",
     "edition": 72,
     "date": 1702511871194,
@@ -1658,7 +1658,7 @@
   {
     "name": "BitMaxx NFT Collection #73",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/73.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/73.mp4",
     "dna": "01e0ceb9341754ec30e08a984eb176342286da2b",
     "edition": 73,
     "date": 1702511871243,
@@ -1681,7 +1681,7 @@
   {
     "name": "BitMaxx NFT Collection #74",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/74.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/74.mp4",
     "dna": "219ea8564c9139790d6d17250d8ec93119aa6e04",
     "edition": 74,
     "date": 1702511871293,
@@ -1704,7 +1704,7 @@
   {
     "name": "BitMaxx NFT Collection #75",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/75.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/75.mp4",
     "dna": "93740dc7420b57cc393999014153186a7c44db4e",
     "edition": 75,
     "date": 1702511871349,
@@ -1727,7 +1727,7 @@
   {
     "name": "BitMaxx NFT Collection #76",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/76.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/76.mp4",
     "dna": "52840af331e0b242d36c529c8e980d45e884229c",
     "edition": 76,
     "date": 1702511871399,
@@ -1750,7 +1750,7 @@
   {
     "name": "BitMaxx NFT Collection #77",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/77.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/77.mp4",
     "dna": "12ea0c9225ede9d84ac5c8cdc9fe3682cf089c6e",
     "edition": 77,
     "date": 1702511871448,
@@ -1773,7 +1773,7 @@
   {
     "name": "BitMaxx NFT Collection #78",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/78.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/78.mp4",
     "dna": "4abd7b0de246d25ff065619faee53a9ad1760050",
     "edition": 78,
     "date": 1702511871497,
@@ -1796,7 +1796,7 @@
   {
     "name": "BitMaxx NFT Collection #79",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/79.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/79.mp4",
     "dna": "615c2b936fc807911b105686db00278b2f130879",
     "edition": 79,
     "date": 1702511871547,
@@ -1819,7 +1819,7 @@
   {
     "name": "BitMaxx NFT Collection #80",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/80.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/80.mp4",
     "dna": "e8786daaeac63e278a8ff817126845eb8c6f7f95",
     "edition": 80,
     "date": 1702511871601,
@@ -1842,7 +1842,7 @@
   {
     "name": "BitMaxx NFT Collection #81",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/81.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/81.mp4",
     "dna": "dbe3abd0ac71b1bccaedc4e1fba58dab505c349f",
     "edition": 81,
     "date": 1702511871652,
@@ -1865,7 +1865,7 @@
   {
     "name": "BitMaxx NFT Collection #82",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/82.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/82.mp4",
     "dna": "9e1c677507d0f1a8f4797c510b340eacb9bb4948",
     "edition": 82,
     "date": 1702511871701,
@@ -1888,7 +1888,7 @@
   {
     "name": "BitMaxx NFT Collection #83",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/83.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/83.mp4",
     "dna": "27cc01b502c8a39423b6f88385c6782b3c4c991b",
     "edition": 83,
     "date": 1702511871750,
@@ -1911,7 +1911,7 @@
   {
     "name": "BitMaxx NFT Collection #84",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/84.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/84.mp4",
     "dna": "254b4739a17338ab34db030e177eed3afd3e03b8",
     "edition": 84,
     "date": 1702511871799,
@@ -1934,7 +1934,7 @@
   {
     "name": "BitMaxx NFT Collection #85",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/85.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/85.mp4",
     "dna": "e0510777444f716a2ea75ce6f39e78b83fd536a0",
     "edition": 85,
     "date": 1702511871853,
@@ -1957,7 +1957,7 @@
   {
     "name": "BitMaxx NFT Collection #86",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/86.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/86.mp4",
     "dna": "a704a2ca6b81dbbf85b61015d35fc64f5e28aafa",
     "edition": 86,
     "date": 1702511871902,
@@ -1980,7 +1980,7 @@
   {
     "name": "BitMaxx NFT Collection #87",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/87.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/87.mp4",
     "dna": "8e0e6e45353b2c3e230432f5171f3e855c066e0b",
     "edition": 87,
     "date": 1702511871951,
@@ -2003,7 +2003,7 @@
   {
     "name": "BitMaxx NFT Collection #88",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/88.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/88.mp4",
     "dna": "848aa8df2b554bdcd22342be759298ce09ce9175",
     "edition": 88,
     "date": 1702511872002,
@@ -2026,7 +2026,7 @@
   {
     "name": "BitMaxx NFT Collection #89",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/89.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/89.mp4",
     "dna": "65b81335cd1e4729685783681cd59cd361e37dc4",
     "edition": 89,
     "date": 1702511872050,
@@ -2049,7 +2049,7 @@
   {
     "name": "BitMaxx NFT Collection #90",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/90.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/90.mp4",
     "dna": "0679e91a071a663ca19da703e33b7b76e1df5467",
     "edition": 90,
     "date": 1702511872104,
@@ -2072,7 +2072,7 @@
   {
     "name": "BitMaxx NFT Collection #91",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/91.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/91.mp4",
     "dna": "d827dffdceaee06c0572cbad3e8786a61418e625",
     "edition": 91,
     "date": 1702511872153,
@@ -2095,7 +2095,7 @@
   {
     "name": "BitMaxx NFT Collection #92",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/92.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/92.mp4",
     "dna": "4de6cbc3a87edc4f136642a13d2d3e5dba13d947",
     "edition": 92,
     "date": 1702511872201,
@@ -2118,7 +2118,7 @@
   {
     "name": "BitMaxx NFT Collection #93",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/93.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/93.mp4",
     "dna": "e8d1e77eefd2dd4bf9d390ffe50d272db7de7851",
     "edition": 93,
     "date": 1702511872255,
@@ -2141,7 +2141,7 @@
   {
     "name": "BitMaxx NFT Collection #94",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/94.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/94.mp4",
     "dna": "7735e48b7b0a28e1d231f573e5cdb03efe2898fe",
     "edition": 94,
     "date": 1702511872304,
@@ -2164,7 +2164,7 @@
   {
     "name": "BitMaxx NFT Collection #95",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/95.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/95.mp4",
     "dna": "0e34ae9ad741bf43fa65eedd23394d1e7ce2a156",
     "edition": 95,
     "date": 1702511872358,
@@ -2187,7 +2187,7 @@
   {
     "name": "BitMaxx NFT Collection #96",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/96.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/96.mp4",
     "dna": "b1bcda4fdd9f445aefad543f084a983a0702751e",
     "edition": 96,
     "date": 1702511872407,
@@ -2210,7 +2210,7 @@
   {
     "name": "BitMaxx NFT Collection #97",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/97.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/97.mp4",
     "dna": "ae520ff23f0dd4786f5b6549f5139eed3160818e",
     "edition": 97,
     "date": 1702511872455,
@@ -2233,7 +2233,7 @@
   {
     "name": "BitMaxx NFT Collection #98",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/98.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/98.mp4",
     "dna": "570f00533ba3366ab029470b95b73f77a673008d",
     "edition": 98,
     "date": 1702511872508,
@@ -2256,7 +2256,7 @@
   {
     "name": "BitMaxx NFT Collection #99",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/99.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/99.mp4",
     "dna": "ad07322b1031c9592a4b999339e31f52ae67b46b",
     "edition": 99,
     "date": 1702511872557,
@@ -2279,7 +2279,7 @@
   {
     "name": "BitMaxx NFT Collection #100",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/100.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/100.mp4",
     "dna": "deeae6f6976b7a3d4c7ba210130491ada8dfe49f",
     "edition": 100,
     "date": 1702511872610,
@@ -2302,7 +2302,7 @@
   {
     "name": "BitMaxx NFT Collection #101",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/101.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/101.mp4",
     "dna": "fc1ca28b0a7f668f4f2160583677db8d47a3d64e",
     "edition": 101,
     "date": 1702511872661,
@@ -2325,7 +2325,7 @@
   {
     "name": "BitMaxx NFT Collection #102",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/102.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/102.mp4",
     "dna": "460d8024f42bf630f18ccd8818ce6925e34b04d2",
     "edition": 102,
     "date": 1702511872709,
@@ -2348,7 +2348,7 @@
   {
     "name": "BitMaxx NFT Collection #103",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/103.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/103.mp4",
     "dna": "add1d609706eca03612f7610c1bda63f900c57ca",
     "edition": 103,
     "date": 1702511872763,
@@ -2371,7 +2371,7 @@
   {
     "name": "BitMaxx NFT Collection #104",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/104.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/104.mp4",
     "dna": "96df4a606feee27c2baf867729db802bc221eb84",
     "edition": 104,
     "date": 1702511872812,
@@ -2394,7 +2394,7 @@
   {
     "name": "BitMaxx NFT Collection #105",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/105.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/105.mp4",
     "dna": "4ea6f52e84830ad49fd0f3ed1f7a4c5df6445fec",
     "edition": 105,
     "date": 1702511872865,
@@ -2417,7 +2417,7 @@
   {
     "name": "BitMaxx NFT Collection #106",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/106.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/106.mp4",
     "dna": "26123da31f24b2d4df7284859ab738cab3c2fd44",
     "edition": 106,
     "date": 1702511872914,
@@ -2440,7 +2440,7 @@
   {
     "name": "BitMaxx NFT Collection #107",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/107.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/107.mp4",
     "dna": "6318f73654cdf65fe4a52584d4530ad04ff2854c",
     "edition": 107,
     "date": 1702511872963,
@@ -2463,7 +2463,7 @@
   {
     "name": "BitMaxx NFT Collection #108",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/108.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/108.mp4",
     "dna": "c9cd7f9c7a7ea932f7a294de7b6f6d01fe1ceb9b",
     "edition": 108,
     "date": 1702511873012,
@@ -2486,7 +2486,7 @@
   {
     "name": "BitMaxx NFT Collection #109",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/109.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/109.mp4",
     "dna": "1752a9703682e4d68b4cbf5e3a1128b8071c9f11",
     "edition": 109,
     "date": 1702511873062,
@@ -2509,7 +2509,7 @@
   {
     "name": "BitMaxx NFT Collection #110",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/110.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/110.mp4",
     "dna": "ab774ffd5151cf93a06e4e9be01a8586b6d6d311",
     "edition": 110,
     "date": 1702511873116,
@@ -2532,7 +2532,7 @@
   {
     "name": "BitMaxx NFT Collection #111",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/111.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/111.mp4",
     "dna": "205d59aff1ac95af334295f0ac48ac830958657a",
     "edition": 111,
     "date": 1702511873165,
@@ -2555,7 +2555,7 @@
   {
     "name": "BitMaxx NFT Collection #112",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/112.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/112.mp4",
     "dna": "04a65a07a516070d5a63e78d38ca2ffff4b670ac",
     "edition": 112,
     "date": 1702511873214,
@@ -2578,7 +2578,7 @@
   {
     "name": "BitMaxx NFT Collection #113",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/113.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/113.mp4",
     "dna": "bb3d492cac32f73dbc900f102c7fcd259e3703a4",
     "edition": 113,
     "date": 1702511873263,
@@ -2601,7 +2601,7 @@
   {
     "name": "BitMaxx NFT Collection #114",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/114.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/114.mp4",
     "dna": "e5459d4621a32dbfda4c4bd71081159d2809eb27",
     "edition": 114,
     "date": 1702511873313,
@@ -2624,7 +2624,7 @@
   {
     "name": "BitMaxx NFT Collection #115",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/115.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/115.mp4",
     "dna": "4d96b369bf76623b447879f57b7956e38bc9d612",
     "edition": 115,
     "date": 1702511873366,
@@ -2647,7 +2647,7 @@
   {
     "name": "BitMaxx NFT Collection #116",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/116.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/116.mp4",
     "dna": "2cbf23f2ad5ccdcd1e5472dbc40f0c08c9201b21",
     "edition": 116,
     "date": 1702511873415,
@@ -2670,7 +2670,7 @@
   {
     "name": "BitMaxx NFT Collection #117",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/117.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/117.mp4",
     "dna": "7422a2b49ad1dafc5a20d193fe629bf11a3600e3",
     "edition": 117,
     "date": 1702511873463,
@@ -2693,7 +2693,7 @@
   {
     "name": "BitMaxx NFT Collection #118",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/118.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/118.mp4",
     "dna": "35e2e993002c63bd5fbddf68b5ec47fc76446724",
     "edition": 118,
     "date": 1702511873518,
@@ -2716,7 +2716,7 @@
   {
     "name": "BitMaxx NFT Collection #119",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/119.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/119.mp4",
     "dna": "48e6a88e876dadad6d1cdc640f70fae07da79e27",
     "edition": 119,
     "date": 1702511873567,
@@ -2739,7 +2739,7 @@
   {
     "name": "BitMaxx NFT Collection #120",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/120.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/120.mp4",
     "dna": "538e5e71e323f3c9d9d9330f42facb6cfe2d2787",
     "edition": 120,
     "date": 1702511873622,
@@ -2762,7 +2762,7 @@
   {
     "name": "BitMaxx NFT Collection #121",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/121.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/121.mp4",
     "dna": "ea1f8628c5bea4b35d8309cdc40e011587f05591",
     "edition": 121,
     "date": 1702511873670,
@@ -2785,7 +2785,7 @@
   {
     "name": "BitMaxx NFT Collection #122",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/122.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/122.mp4",
     "dna": "fbeb78fba25803982f5f513b86ccccb61c03cd3b",
     "edition": 122,
     "date": 1702511873719,
@@ -2808,7 +2808,7 @@
   {
     "name": "BitMaxx NFT Collection #123",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/123.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/123.mp4",
     "dna": "aa2c0f5988f93edf4fd478e9e92ca5b882c1ae49",
     "edition": 123,
     "date": 1702511873769,
@@ -2831,7 +2831,7 @@
   {
     "name": "BitMaxx NFT Collection #124",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/124.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/124.mp4",
     "dna": "ff2d2a42ee4ad4bab3352e38a5cad43e18aae8db",
     "edition": 124,
     "date": 1702511873819,
@@ -2854,7 +2854,7 @@
   {
     "name": "BitMaxx NFT Collection #125",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/125.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/125.mp4",
     "dna": "fea0f9f2962e4bdddfdf64c5c63be749cee5412d",
     "edition": 125,
     "date": 1702511873873,
@@ -2877,7 +2877,7 @@
   {
     "name": "BitMaxx NFT Collection #126",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/126.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/126.mp4",
     "dna": "c663695702e23ecc1a1927c57c9beb073998b81c",
     "edition": 126,
     "date": 1702511873922,
@@ -2900,7 +2900,7 @@
   {
     "name": "BitMaxx NFT Collection #127",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/127.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/127.mp4",
     "dna": "d10dce3f3c54a992623f71abf704fa3b766d226b",
     "edition": 127,
     "date": 1702511873971,
@@ -2923,7 +2923,7 @@
   {
     "name": "BitMaxx NFT Collection #128",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/128.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/128.mp4",
     "dna": "c3a180497f8c472890037c2e6155b664fe9eca6f",
     "edition": 128,
     "date": 1702511874019,
@@ -2946,7 +2946,7 @@
   {
     "name": "BitMaxx NFT Collection #129",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/129.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/129.mp4",
     "dna": "c303cc52af96588358a57045914d79fd9a94fa74",
     "edition": 129,
     "date": 1702511874068,
@@ -2969,7 +2969,7 @@
   {
     "name": "BitMaxx NFT Collection #130",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/130.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/130.mp4",
     "dna": "4c48f3dfddb338590cd19abcd76b5142c6190133",
     "edition": 130,
     "date": 1702511874136,
@@ -2992,7 +2992,7 @@
   {
     "name": "BitMaxx NFT Collection #131",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/131.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/131.mp4",
     "dna": "a697d5118532df2a1770eded5758a6e923d0dbd8",
     "edition": 131,
     "date": 1702511874185,
@@ -3015,7 +3015,7 @@
   {
     "name": "BitMaxx NFT Collection #132",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/132.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/132.mp4",
     "dna": "ce8be3137d49b0ea354234cc8748135d9dc4fc02",
     "edition": 132,
     "date": 1702511874233,
@@ -3038,7 +3038,7 @@
   {
     "name": "BitMaxx NFT Collection #133",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/133.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/133.mp4",
     "dna": "6b09e82e247bba0794e8f3ab0fd7af7723628904",
     "edition": 133,
     "date": 1702511874282,
@@ -3061,7 +3061,7 @@
   {
     "name": "BitMaxx NFT Collection #134",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/134.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/134.mp4",
     "dna": "38a3b74cd013fed65e1fa7321e27a92bad64834e",
     "edition": 134,
     "date": 1702511874331,
@@ -3084,7 +3084,7 @@
   {
     "name": "BitMaxx NFT Collection #135",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/135.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/135.mp4",
     "dna": "2e90d6c996a28eab277dd320842c7e1a8e0deeab",
     "edition": 135,
     "date": 1702511874391,
@@ -3107,7 +3107,7 @@
   {
     "name": "BitMaxx NFT Collection #136",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/136.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/136.mp4",
     "dna": "66f3004c1c2af28266d9eaa1136b5d325f718140",
     "edition": 136,
     "date": 1702511874441,
@@ -3130,7 +3130,7 @@
   {
     "name": "BitMaxx NFT Collection #137",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/137.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/137.mp4",
     "dna": "b70a347142846ebfed7dbe70580a1e93862c9bbe",
     "edition": 137,
     "date": 1702511874489,
@@ -3153,7 +3153,7 @@
   {
     "name": "BitMaxx NFT Collection #138",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/138.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/138.mp4",
     "dna": "ac47861b5e447495607d70aa6bf9b819738fe586",
     "edition": 138,
     "date": 1702511874538,
@@ -3176,7 +3176,7 @@
   {
     "name": "BitMaxx NFT Collection #139",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/139.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/139.mp4",
     "dna": "933385902de9b7f089e5121d223ef22209c968c9",
     "edition": 139,
     "date": 1702511874588,
@@ -3199,7 +3199,7 @@
   {
     "name": "BitMaxx NFT Collection #140",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/140.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/140.mp4",
     "dna": "3c8fa7365f98e5c122d7d123e1d4af174a534769",
     "edition": 140,
     "date": 1702511874640,
@@ -3222,7 +3222,7 @@
   {
     "name": "BitMaxx NFT Collection #141",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/141.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/141.mp4",
     "dna": "16ece4e8b6a9a2979b5e2e925563164fe94770f7",
     "edition": 141,
     "date": 1702511874689,
@@ -3245,7 +3245,7 @@
   {
     "name": "BitMaxx NFT Collection #142",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/142.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/142.mp4",
     "dna": "b33a7185ac48d23de34b4201da20a068bd9d3264",
     "edition": 142,
     "date": 1702511874740,
@@ -3268,7 +3268,7 @@
   {
     "name": "BitMaxx NFT Collection #143",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/143.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/143.mp4",
     "dna": "f6ebbf98f6ed9cdbc92308bac128f7f2aa1fed0f",
     "edition": 143,
     "date": 1702511874789,
@@ -3291,7 +3291,7 @@
   {
     "name": "BitMaxx NFT Collection #144",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/144.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/144.mp4",
     "dna": "ee0f08e1192068a293b30810572f115145c2fdf5",
     "edition": 144,
     "date": 1702511874839,
@@ -3314,7 +3314,7 @@
   {
     "name": "BitMaxx NFT Collection #145",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/145.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/145.mp4",
     "dna": "323313429f4b10544c45791c84d9e186afca6805",
     "edition": 145,
     "date": 1702511874891,
@@ -3337,7 +3337,7 @@
   {
     "name": "BitMaxx NFT Collection #146",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/146.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/146.mp4",
     "dna": "24432a60cec440b336bd205d609f7b0c20141b09",
     "edition": 146,
     "date": 1702511874940,
@@ -3360,7 +3360,7 @@
   {
     "name": "BitMaxx NFT Collection #147",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/147.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/147.mp4",
     "dna": "cd4d5fd2e6d52862445578f81baf8bee534e3da0",
     "edition": 147,
     "date": 1702511874989,
@@ -3383,7 +3383,7 @@
   {
     "name": "BitMaxx NFT Collection #148",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/148.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/148.mp4",
     "dna": "2cf3bc24f97a4fbf6ea2cc04875ed8651a5b2fe7",
     "edition": 148,
     "date": 1702511875038,
@@ -3406,7 +3406,7 @@
   {
     "name": "BitMaxx NFT Collection #149",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/149.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/149.mp4",
     "dna": "3cd645c68e2ea9e6cf49af3e94464c61033f1241",
     "edition": 149,
     "date": 1702511875088,
@@ -3429,7 +3429,7 @@
   {
     "name": "BitMaxx NFT Collection #150",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/150.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/150.mp4",
     "dna": "85f03ca9f092c6aa2f669677c7d8e2039f6054c2",
     "edition": 150,
     "date": 1702511875148,
@@ -3452,7 +3452,7 @@
   {
     "name": "BitMaxx NFT Collection #151",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/151.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/151.mp4",
     "dna": "0f12b6dadf2dc36b2a9c361977787cdfc5161fe6",
     "edition": 151,
     "date": 1702511875197,
@@ -3475,7 +3475,7 @@
   {
     "name": "BitMaxx NFT Collection #152",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/152.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/152.mp4",
     "dna": "bfa28df7093552a8522ed5a960f99a9650fc90ed",
     "edition": 152,
     "date": 1702511875245,
@@ -3498,7 +3498,7 @@
   {
     "name": "BitMaxx NFT Collection #153",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/153.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/153.mp4",
     "dna": "1fe528b6b09ae1bb367fa4276113594aeb65632c",
     "edition": 153,
     "date": 1702511875295,
@@ -3521,7 +3521,7 @@
   {
     "name": "BitMaxx NFT Collection #154",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/154.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/154.mp4",
     "dna": "0702b31847814a52b3118f58734cfbe8d44f0499",
     "edition": 154,
     "date": 1702511875344,
@@ -3544,7 +3544,7 @@
   {
     "name": "BitMaxx NFT Collection #155",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/155.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/155.mp4",
     "dna": "f91e8e97a6358614509f7980ddf1d51874aded1a",
     "edition": 155,
     "date": 1702511875399,
@@ -3567,7 +3567,7 @@
   {
     "name": "BitMaxx NFT Collection #156",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/156.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/156.mp4",
     "dna": "b341b7d741ec5130cfe940899e0ac538cd63eddf",
     "edition": 156,
     "date": 1702511875447,
@@ -3590,7 +3590,7 @@
   {
     "name": "BitMaxx NFT Collection #157",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/157.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/157.mp4",
     "dna": "1e0ac55bd68ec7ac38483900586e33b368d0f8f1",
     "edition": 157,
     "date": 1702511875497,
@@ -3613,7 +3613,7 @@
   {
     "name": "BitMaxx NFT Collection #158",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/158.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/158.mp4",
     "dna": "23365f61c3f916bdb130f8cb69d5789afcb8fe70",
     "edition": 158,
     "date": 1702511875547,
@@ -3636,7 +3636,7 @@
   {
     "name": "BitMaxx NFT Collection #159",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/159.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/159.mp4",
     "dna": "0453b1c4e2997fdfe956e1ef0eecc0c5586c5aab",
     "edition": 159,
     "date": 1702511875596,
@@ -3659,7 +3659,7 @@
   {
     "name": "BitMaxx NFT Collection #160",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/160.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/160.mp4",
     "dna": "ea13587f57ad4115d236ecde8999a70327d5f573",
     "edition": 160,
     "date": 1702511875652,
@@ -3682,7 +3682,7 @@
   {
     "name": "BitMaxx NFT Collection #161",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/161.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/161.mp4",
     "dna": "9a2b7c99f43012ca82a99ab86b0beef1d63af4f9",
     "edition": 161,
     "date": 1702511875701,
@@ -3705,7 +3705,7 @@
   {
     "name": "BitMaxx NFT Collection #162",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/162.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/162.mp4",
     "dna": "d6bd3a80d3f2f3b2b271f1811c2f41c3efdd40a2",
     "edition": 162,
     "date": 1702511875750,
@@ -3728,7 +3728,7 @@
   {
     "name": "BitMaxx NFT Collection #163",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/163.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/163.mp4",
     "dna": "a1d7b36d0472c68f92bcd5c8a4ecc055ab4c3795",
     "edition": 163,
     "date": 1702511875800,
@@ -3751,7 +3751,7 @@
   {
     "name": "BitMaxx NFT Collection #164",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/164.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/164.mp4",
     "dna": "c574140d06fbc74ee420cffed2fdb6ad112c7c5d",
     "edition": 164,
     "date": 1702511875850,
@@ -3774,7 +3774,7 @@
   {
     "name": "BitMaxx NFT Collection #165",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/165.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/165.mp4",
     "dna": "56ecee45f7b667a4997af5a40cd743d665c97eb1",
     "edition": 165,
     "date": 1702511875910,
@@ -3797,7 +3797,7 @@
   {
     "name": "BitMaxx NFT Collection #166",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/166.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/166.mp4",
     "dna": "d1b3410214a0c544b9d7f95d5a70b23211e9f98b",
     "edition": 166,
     "date": 1702511875960,
@@ -3820,7 +3820,7 @@
   {
     "name": "BitMaxx NFT Collection #167",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/167.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/167.mp4",
     "dna": "f5d304a71630fc0f60e5f51e130ffa19c6c9e1e5",
     "edition": 167,
     "date": 1702511876009,
@@ -3843,7 +3843,7 @@
   {
     "name": "BitMaxx NFT Collection #168",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/168.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/168.mp4",
     "dna": "b30670a5a377d67e73c58f6101af1ef66aad18cb",
     "edition": 168,
     "date": 1702511876063,
@@ -3866,7 +3866,7 @@
   {
     "name": "BitMaxx NFT Collection #169",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/169.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/169.mp4",
     "dna": "b7fe1c067d20aeea78fbacef2cf324752ec833d1",
     "edition": 169,
     "date": 1702511876113,
@@ -3889,7 +3889,7 @@
   {
     "name": "BitMaxx NFT Collection #170",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/170.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/170.mp4",
     "dna": "2bedd358b3b0f29db489298d6276a603c919830a",
     "edition": 170,
     "date": 1702511876167,
@@ -3912,7 +3912,7 @@
   {
     "name": "BitMaxx NFT Collection #171",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/171.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/171.mp4",
     "dna": "df8daaa5f34218e3dea0ca3e9e5bf2a2cd62aa26",
     "edition": 171,
     "date": 1702511876216,
@@ -3935,7 +3935,7 @@
   {
     "name": "BitMaxx NFT Collection #172",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/172.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/172.mp4",
     "dna": "2f036a85453a6ed9fa15081bea3937c1284cbccb",
     "edition": 172,
     "date": 1702511876266,
@@ -3958,7 +3958,7 @@
   {
     "name": "BitMaxx NFT Collection #173",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/173.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/173.mp4",
     "dna": "de7332f461e21f64a879b139f237cfb54829efdd",
     "edition": 173,
     "date": 1702511876318,
@@ -3981,7 +3981,7 @@
   {
     "name": "BitMaxx NFT Collection #174",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/174.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/174.mp4",
     "dna": "eb1713b528a81e5d3e4b36af75f7994a10b60d8f",
     "edition": 174,
     "date": 1702511876367,
@@ -4004,7 +4004,7 @@
   {
     "name": "BitMaxx NFT Collection #175",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/175.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/175.mp4",
     "dna": "470764d8e2b7d51da90d12104c2a0d5c6d132a82",
     "edition": 175,
     "date": 1702511876422,
@@ -4027,7 +4027,7 @@
   {
     "name": "BitMaxx NFT Collection #176",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/176.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/176.mp4",
     "dna": "b0a86a6791c45dee068f29345fd5056178f894c6",
     "edition": 176,
     "date": 1702511876470,
@@ -4050,7 +4050,7 @@
   {
     "name": "BitMaxx NFT Collection #177",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/177.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/177.mp4",
     "dna": "f6e31986d04645eeb5466fc738ec7e7a33754114",
     "edition": 177,
     "date": 1702511876524,
@@ -4073,7 +4073,7 @@
   {
     "name": "BitMaxx NFT Collection #178",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/178.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/178.mp4",
     "dna": "1220caeb26efa624f2ba7390343d253743c5de25",
     "edition": 178,
     "date": 1702511876573,
@@ -4096,7 +4096,7 @@
   {
     "name": "BitMaxx NFT Collection #179",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/179.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/179.mp4",
     "dna": "4055ace101413dd467e277ca2293007335813e3a",
     "edition": 179,
     "date": 1702511876622,
@@ -4119,7 +4119,7 @@
   {
     "name": "BitMaxx NFT Collection #180",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/180.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/180.mp4",
     "dna": "cc49572d962d2edca14965405bbb36ad4d704a78",
     "edition": 180,
     "date": 1702511876677,
@@ -4142,7 +4142,7 @@
   {
     "name": "BitMaxx NFT Collection #181",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/181.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/181.mp4",
     "dna": "f8c997b916f910665d7c1bd5fbe305a02650aa71",
     "edition": 181,
     "date": 1702511876726,
@@ -4165,7 +4165,7 @@
   {
     "name": "BitMaxx NFT Collection #182",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/182.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/182.mp4",
     "dna": "b6a7644e3bf3dd54528474d4b49997f1f9cdb3e3",
     "edition": 182,
     "date": 1702511876775,
@@ -4188,7 +4188,7 @@
   {
     "name": "BitMaxx NFT Collection #183",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/183.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/183.mp4",
     "dna": "7cce8bcc74ec5f29f25bbaaef8149272839f0e25",
     "edition": 183,
     "date": 1702511876826,
@@ -4211,7 +4211,7 @@
   {
     "name": "BitMaxx NFT Collection #184",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/184.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/184.mp4",
     "dna": "796f478160d1e8c5e862eabee5289c3c9bda3b0f",
     "edition": 184,
     "date": 1702511876876,
@@ -4234,7 +4234,7 @@
   {
     "name": "BitMaxx NFT Collection #185",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/185.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/185.mp4",
     "dna": "786f3fc28282e79346aefd64fe0566386e866554",
     "edition": 185,
     "date": 1702511876934,
@@ -4257,7 +4257,7 @@
   {
     "name": "BitMaxx NFT Collection #186",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/186.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/186.mp4",
     "dna": "709df92ac78bba32dfce115f0c21b4da66887769",
     "edition": 186,
     "date": 1702511876983,
@@ -4280,7 +4280,7 @@
   {
     "name": "BitMaxx NFT Collection #187",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/187.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/187.mp4",
     "dna": "ea2ab47633a760e7aa231b6bcac2d4315e77f8c0",
     "edition": 187,
     "date": 1702511877032,
@@ -4303,7 +4303,7 @@
   {
     "name": "BitMaxx NFT Collection #188",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/188.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/188.mp4",
     "dna": "2a7c5ad9ada76e6e32209bc744220b18db38f6f8",
     "edition": 188,
     "date": 1702511877080,
@@ -4326,7 +4326,7 @@
   {
     "name": "BitMaxx NFT Collection #189",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/189.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/189.mp4",
     "dna": "eb326f2b9b6efd7923e74f71f883a4d9adec9f20",
     "edition": 189,
     "date": 1702511877130,
@@ -4349,7 +4349,7 @@
   {
     "name": "BitMaxx NFT Collection #190",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/190.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/190.mp4",
     "dna": "97825ec050bc6aa0553f9638e2f4f699e9e4f507",
     "edition": 190,
     "date": 1702511877184,
@@ -4372,7 +4372,7 @@
   {
     "name": "BitMaxx NFT Collection #191",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/191.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/191.mp4",
     "dna": "19bb4fa21b7649b074c46a3204100f91f33aff9a",
     "edition": 191,
     "date": 1702511877233,
@@ -4395,7 +4395,7 @@
   {
     "name": "BitMaxx NFT Collection #192",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/192.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/192.mp4",
     "dna": "cf8c9c924834a5bf8b6c2e462346e2abefb7296f",
     "edition": 192,
     "date": 1702511877287,
@@ -4418,7 +4418,7 @@
   {
     "name": "BitMaxx NFT Collection #193",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/193.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/193.mp4",
     "dna": "cd38de08ba07af085b0d2d6e7570eb2f09aea1ac",
     "edition": 193,
     "date": 1702511877338,
@@ -4441,7 +4441,7 @@
   {
     "name": "BitMaxx NFT Collection #194",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/194.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/194.mp4",
     "dna": "7556db5679e27094a3e77ecd9b0cf432eb35113a",
     "edition": 194,
     "date": 1702511877387,
@@ -4464,7 +4464,7 @@
   {
     "name": "BitMaxx NFT Collection #195",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/195.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/195.mp4",
     "dna": "1c324a99942ac5188aa04a9e4ceca0b9166ce859",
     "edition": 195,
     "date": 1702511877442,
@@ -4487,7 +4487,7 @@
   {
     "name": "BitMaxx NFT Collection #196",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/196.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/196.mp4",
     "dna": "5e09bd70154feb99dfc0de41fdd183e751cc847a",
     "edition": 196,
     "date": 1702511877491,
@@ -4510,7 +4510,7 @@
   {
     "name": "BitMaxx NFT Collection #197",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/197.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/197.mp4",
     "dna": "c2567993f995c51a08ee32b56e3e387aa38e1659",
     "edition": 197,
     "date": 1702511877541,
@@ -4533,7 +4533,7 @@
   {
     "name": "BitMaxx NFT Collection #198",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/198.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/198.mp4",
     "dna": "da733e596db8b7a9f524e685631cd5d3f6e0c98d",
     "edition": 198,
     "date": 1702511877590,
@@ -4556,7 +4556,7 @@
   {
     "name": "BitMaxx NFT Collection #199",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/199.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/199.mp4",
     "dna": "86b54a5534769efb8ade9808349c3c19c1500dc2",
     "edition": 199,
     "date": 1702511877639,
@@ -4579,7 +4579,7 @@
   {
     "name": "BitMaxx NFT Collection #200",
     "description": "BitMaxx NFT Collection",
-    "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/200.mp4",
+    "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/200.mp4",
     "dna": "907915ecd1319b502cc40a2d58800a64010c97d1",
     "edition": 200,
     "date": 1702511877693,

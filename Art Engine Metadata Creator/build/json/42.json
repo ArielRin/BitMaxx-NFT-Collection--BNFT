@@ -1,7 +1,7 @@
 {
   "name": "BitMaxx NFT Collection #42",
   "description": "BitMaxx NFT Collection",
-  "image": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/42.mp4",
+  "animation_url": "ipfs://bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/42.mp4",
   "dna": "ebd910077ff0bb0920cfea6cf872cfc6912a2dc1",
   "edition": 42,
   "date": 1702511869677,
