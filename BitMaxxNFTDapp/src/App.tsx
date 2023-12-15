@@ -23,12 +23,18 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import abiFile from './abiFile.json';
 import './styles.css';
-import backgroundGif from './sea.gif';
+import backgroundGif from './gold.gif';
 import MainTextLogo from './headerlogo.png';
 import yourVideo from 'https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/raw/final/1yt.mp4';
 import yourGif from './nft.gif';
 
+<<<<<<< HEAD
 const CONTRACT_ADDRESS = '0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38';
+=======
+const CONTRACT_ADDRESS = '0x0e644A552B34A8F1e276bc91ADA11e25411aEF44'; // 2nd maxxtest
+// const CONTRACT_ADDRESS = '0x27B327315cb8EFBD671FDf82730a3bD25563aea5'; // first maxx test 2
+// const CONTRACT_ADDRESS = '0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C'; // first maxx test 1
+>>>>>>> parent of 95492d5a (Final for deployment Seans BTM NFT Live)
 
 const getExplorerLink = () => `https://scan.maxxchain.org/address/${CONTRACT_ADDRESS}`;
 const getOpenSeaURL = () => `https://testnets.opensea.io/assets/goerli/${CONTRACT_ADDRESS}`;
@@ -317,9 +323,13 @@ const [isRevealed, setIsRevealed] = useState(false);
               <TabPanel>
 
               <div>
+<<<<<<< HEAD
 
                   <img src={yourGif} alt="Your Gif" style={{ width: '100%', borderRadius: '30px' }} />
 
+=======
+                <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobody" />
+>>>>>>> parent of 95492d5a (Final for deployment Seans BTM NFT Live)
 
                 <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
                   BitMaxx About our NFTs
@@ -343,6 +353,7 @@ const [isRevealed, setIsRevealed] = useState(false);
 
               </TabPanel>
               <TabPanel>
+<<<<<<< HEAD
 
               <div>
                 <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobody" />
@@ -361,6 +372,84 @@ const [isRevealed, setIsRevealed] = useState(false);
                   </Link>
                 </Text>
               </div>
+=======
+  <div>
+    <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobody" />
+    <Text className="contractname" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+      {loading ? 'Loading...' : `${contractName || 'N/A'}`}
+    </Text>
+    <Text className="totalSupply" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+      {loading ? 'Loading...' : `Sold : ${totalSupply} / ${maxSupply}  `}
+    </Text>
+    <Text className="remainingSupply" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+      {loading ? 'Loading...' : `Remaining Supply: ${remainingSupply}`}
+    </Text>
+    <Text className="contractaddr" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+      <Link isExternal href={getExplorerLink()}>
+        {CONTRACT_ADDRESS}
+      </Link>
+    </Text>
+    <Text className="userNftBalance" style={{ textAlign: 'center', fontWeight: 'bold' }}>
+      {loading ? 'Loading...' : `BitMaxx NFTs in wallet : ${userNftBalance} `}
+    </Text>
+  </div>
+
+  {totalSupply === maxSupply ? (
+    <Text className="soldOutMessage" style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '3xl', color: 'red' }}>
+      Sold Out!
+    </Text>
+  ) : (
+    <>
+      <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
+        {cost} PWR Each!
+      </Text>
+      <Box marginTop='4' display='flex' alignItems='center' justifyContent='center'>
+        <Button
+          marginTop='1'
+          textColor='white'
+          bg='#ffc114'
+          _hover={{
+            bg: '#ffdc39',
+          }}
+          onClick={handleDecrement}
+          disabled={!isConnected || mintLoading || mintAmount === 1}
+        >
+          -
+        </Button>
+        <Text marginX='3' textAlign='center' fontSize='lg'>
+          {mintAmount}
+        </Text>
+        <Button
+          marginTop='1'
+          textColor='white'
+          bg='#ffc114'
+          _hover={{
+            bg: '#ffdc39',
+          }}
+          onClick={handleIncrement}
+          disabled={!isConnected || mintLoading || mintAmount === 200}
+        >
+          +
+        </Button>
+      </Box>
+      <Box marginTop='2' display='flex' alignItems='center' justifyContent='center'>
+        <Button
+          disabled={!isConnected || mintLoading}
+          marginTop='6'
+          onClick={onMintClick}
+          textColor='white'
+          bg='#ffc114'
+          _hover={{
+            bg: '#ffdc39',
+          }}
+        >
+          {isConnected ? `Mint ${mintAmount} Now` : ' Mint on (Connect Wallet)'}
+        </Button>
+      </Box>
+    </>
+  )}
+</TabPanel>
+>>>>>>> parent of 95492d5a (Final for deployment Seans BTM NFT Live)
 
               <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
                 {cost} PWR Each!
@@ -502,6 +591,20 @@ const [isRevealed, setIsRevealed] = useState(false);
                  </Button>
 
                </Box>
+<<<<<<< HEAD
+=======
+                             <Box marginTop='2' display='flex' alignItems='center' justifyContent='center'>
+               <Button
+                                       onClick={onWithdrawClick}
+                                       textColor="white"
+                                       bg="#ff5555"
+                                       _hover={{
+                                         bg: '#ff6b6b',
+                                       }}
+                                     >
+                                       {withdrawLoading ? 'Withdrawing...' : 'Withdraw Funds (Only Owner)'}
+                                     </Button>
+>>>>>>> parent of 95492d5a (Final for deployment Seans BTM NFT Live)
 
               </div>
 
