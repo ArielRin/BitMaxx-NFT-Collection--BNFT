@@ -805,7 +805,7 @@ useEffect(() => {
 </div>
 
 <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
-To process rewards, ensure SafuMaxx has been sent to contract as follows {SPLITTER_CONTRACT_ADDRESS}, then sync the payee list this will update the rewards to the current nft holders, then after sync performed and success click the distribute rewards button.
+To process rewards, ensure SafuMaxx has been sent to contract as follows {SPLITTER_CONTRACT_ADDRESS}, you can also send PWR (only) directly to SafuSwapsendtreasury contract at 0x70807A0d4871B18062EE72d32C91C3d393a067f6, then sync the payee list this will update the rewards to the current nft holders, then after sync performed and success click the distribute rewards button.
 </Text>
 
 <div className="buttons-container" style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
