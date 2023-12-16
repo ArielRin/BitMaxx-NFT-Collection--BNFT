@@ -16,6 +16,8 @@ import {
   useToast,
 } from '@chakra-ui/react';
 
+import { FaTelegram, FaTwitter, FaGlobe, FaGithub } from 'react-icons/fa'; // Import the icons you want to use
+
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { ethers } from 'ethers';
 import { useAccount, useContractWrite } from 'wagmi';
@@ -25,9 +27,11 @@ import abiFile from './abiFile.json';
 import './styles.css';
 import backgroundGif from './sea.gif';
 import MainTextLogo from './headerlogo.png';
+import yourVideo from 'https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/raw/final/1yt.mp4';
+import yourGif from './nft.gif';
 
 import btm from './btm.png';
-const CONTRACT_ADDRESS = '0xe2e7e9E29E4Ec0b630c52Ea8A90E7C456733BAaF'; // 2nd maxxtest
+const CONTRACT_ADDRESS = '0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38'; // 2nd maxxtest 0x0e644A552B34A8F1e276bc91ADA11e25411aEF44
 // const CONTRACT_ADDRESS = '0x27B327315cb8EFBD671FDf82730a3bD25563aea5'; // first maxx test 2
 // const CONTRACT_ADDRESS = '0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C'; // first maxx test 1
 
@@ -403,16 +407,19 @@ useEffect(() => {
               <Tab style={{ fontWeight: 'bold', color: 'white' }}>Home</Tab>
               <Tab style={{ fontWeight: 'bold', color: 'white' }}>Mint</Tab>
               <Tab style={{ fontWeight: 'bold', color: 'white' }}>Stats</Tab>
+              <Tab style={{ fontWeight: 'bold', color: 'white' }}>Links</Tab>
             </TabList>
 
             <TabPanels>
               <TabPanel>
 
               <div>
-                <img src={btm} alt="BitMaxx NFT Collection" className="logobody" />
+
+                  <img src={yourGif} alt="Your Gif" style={{ width: '100%', borderRadius: '30px' }} />
+
 
                 <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
-                  BitMaxx About our NFTs
+                  BitMaxx  NFT Collection
                 </Text>
 
                 <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
@@ -518,11 +525,6 @@ useEffect(() => {
                 <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobody" />
 
 
-                <Text className="contractaddr" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-
-                    {CONTRACT_ADDRESS}
-
-                </Text>
 
 
                 <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
@@ -536,9 +538,6 @@ useEffect(() => {
                   {loading ? 'Loading...' : `Contract Balance: ${contractBalanceValue} PWR`}
                 </Text>
 
-                <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
-                  Admin Functions
-                </Text>
 
                 <div className="buttons-container" style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
                   <Button
@@ -619,7 +618,38 @@ useEffect(() => {
 
 
               </TabPanel>
-            </TabPanels>
+
+
+
+              <TabPanel>
+                  <img src={btm} alt="BitMaxx NFT Collection" className="logobody" style={{ width: '50%', height: '50%' }} />
+
+                                    <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
+                                    For further information, see the links below
+                                    </Text>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+
+
+                  <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+                    <Link isExternal href="https://t.me/bittmaxx"><FaTelegram /></Link>
+                  </Text>
+
+                  <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+                    <Link isExternal href="https://t.me/bittmaxx/3116"><FaTwitter /></Link>
+                  </Text>
+
+                  <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+                    <Link isExternal href="https://bitmaxx.io"><FaGlobe /></Link>
+                  </Text>
+
+                  <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+                    <Link isExternal href="https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT"><FaGithub /></Link>
+                  </Text>
+
+                </div>
+              </TabPanel>
+
+           </TabPanels>
           </Tabs>
             <Text className="paragraph1" style={{ color: 'white', padding: '20px', textAlign: 'center' }}>
               &copy; BitMaxx NFT Collection 2023. All rights reserved.
