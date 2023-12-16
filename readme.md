@@ -12,7 +12,6 @@ Welcome to the BitMaxx NFT Collection! This collection is built on the MaxxChain
 
 
 
-![Admin Page](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/finals2/Assets/admin.png)
 
 ![Home](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/finals2/Assets/home.png)
 
@@ -44,7 +43,49 @@ Feel free to reach out to us if you have any questions or need assistance.
 
 Happy collecting!
 
+## Admin Overview BitMaxx NFT Collection - Admin Tab Explained
 
+
+![Admin Page](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/finals2/Assets/admin.png)
+
+The BitMaxx NFT Collection, built on the MaxxChain network, offers a unique digital asset experience. This GitHub README provides a detailed explanation of the Admin tab in the collection's interface. The Admin tab is designed for collection administrators to manage various aspects of the NFT collection, such as revealing the collection, pausing minting, setting prices, withdrawing funds, and distributing rewards.
+
+## Features
+
+### 1. Reveal Collection
+- **Functionality**: Unveils the NFTs in the collection.
+- **Access**: Only the owner of the contract has this capability.
+- **Usage**: To reveal the collection, click the 'Reveal Collection' button. If the collection is already revealed, the button indicates 'Already Revealed'.
+
+### 2. Pause/Unpause Minting
+- **Functionality**: Allows toggling the minting process.
+- **Usage**: Click 'Pause Minting' to halt the NFT minting process, or 'UnPause Minting' to resume it. This is useful for maintenance or stopping minting after completion.
+
+### 3. Set Cost
+- **Functionality**: Adjusts the minting price.
+- **Input**: Enter the new price in Wei.
+- **Usage**: Input the desired cost and click 'Set Cost'. This updates the minting price for each NFT.
+
+### 4. Withdraw Funds
+- **Functionality**: Withdraws accumulated funds from the contract.
+- **Usage**: Click 'Withdraw Funds' to transfer the funds to the owner's wallet. This is typically used to collect revenues from NFT sales.
+
+### 5. Distribute Rewards
+- **Functionality**: Distributes SafuMaxx rewards to NFT holders.
+- **Process**:
+  - **Sync Payees**: Updates the payee list to reflect current NFT holders.
+  - **Distribute Rewards**: After syncing payees, this button distributes SafuMaxx rewards to holders.
+- **Usage**: First, ensure SafuMaxx tokens are sent to the contract. Then, use 'Sync Payees' to update the holder list, followed by 'Distribute Rewards' to process the rewards.
+
+## Admin Tab Usage
+The Admin tab is critical for managing the NFT collection effectively. It provides control over key elements of the collection, ensuring a smooth and efficient operation. Its intuitive design allows for easy access and execution of administrative tasks.
+
+## Conclusion
+The Admin tab in the BitMaxx NFT Collection interface is a powerful tool for collection administrators. It offers essential functionalities for managing the minting process, setting prices, withdrawing funds, and distributing rewards, ensuring the collection's success and sustainability.
+
+---
+
+**Note**: This document is for informational purposes only and is subject to change. Admins should exercise caution and understand the implications of each action before proceeding.
 
 
 ## TEST CHEAP MINT 0.000001 PWR
