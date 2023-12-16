@@ -32,6 +32,7 @@ import backgroundGif from './sea.gif';
 import MainTextLogo from './headerlogo.png';
 
 import yourVideo from 'https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/raw/final/1yt.mp4';
+
 import yourGif from './nft.gif';
 
 import btm from './btm.png';
@@ -553,22 +554,19 @@ useEffect(() => {
     <>
       <ToastContainer />
 
-      <header>
+      <header className="header">
         <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobodyhead" />
         <div className="connect-button">
           <ConnectButton />
         </div>
       </header>
 
-      <div
-        className="wrapper"
-        style={{
-          backgroundColor: 'black',
-          color: 'white',
-          backgroundImage: `url(${backgroundGif})`,
-          backgroundSize: 'cover',
-        }}
-      >
+      <div className="wrapper responsive-wrapper" style={{
+    backgroundColor: 'black',
+    color: 'white',
+    backgroundImage: `url(${backgroundGif})`,
+    backgroundSize: 'cover',
+}}>
         <div className="mainboxwrapper">
           <Container className="container" paddingY="4">
           <Tabs isFitted variant="enclosed">
@@ -630,6 +628,10 @@ useEffect(() => {
         {CONTRACT_ADDRESS}
       </Link>
     </Text>
+
+
+
+
     <Text className="userNftBalance" style={{ textAlign: 'center', fontWeight: 'bold' }}>
       {loading ? 'Loading...' : `BitMaxx NFTs in wallet : ${userNftBalance} `}
     </Text>
@@ -699,29 +701,6 @@ useEffect(() => {
 
                 <img src={btm} alt="BitMaxx NFT Collection" className="logobody" style={{ width: '50%', height: '50%' }} />
 
-                                  <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
-                                  For further information, see the links below
-                                  </Text>
-              <div style={{ display: 'flex', justifyContent: 'center' }}>
-
-
-                <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                  <Link isExternal href="https://t.me/bittmaxx"><FaTelegram /></Link>
-                </Text>
-
-                <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                  <Link isExternal href="https://twitter.com/BitMaxx_Token"><FaTwitter /></Link>
-                </Text>
-
-                <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                  <Link isExternal href="https://bitmaxx.io"><FaGlobe /></Link>
-                </Text>
-
-                <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                  <Link isExternal href="https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT"><FaGithub /></Link>
-                </Text>
-
-              </div>
 
 
                 <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
@@ -859,6 +838,27 @@ To process rewards, ensure SafuMaxx has been sent to contract as follows {SPLITT
             <Text className="paragraph1" style={{ color: 'white', padding: '20px', textAlign: 'center' }}>
               &copy; BitMaxx NFT Collection 2023. All rights reserved.
             </Text>
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+
+
+<Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+<Link isExternal href="https://t.me/bittmaxx"><FaTelegram /></Link>
+</Text>
+
+<Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+<Link isExternal href="https://twitter.com/BitMaxx_Token"><FaTwitter /></Link>
+</Text>
+
+<Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+<Link isExternal href="https://bitmaxx.io"><FaGlobe /></Link>
+</Text>
+
+<Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+<Link isExternal href="https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT"><FaGithub /></Link>
+</Text>
+
+</div>
           </Container>
         </div>
       </div>

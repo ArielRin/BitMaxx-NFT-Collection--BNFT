@@ -35,6 +35,28 @@ header {
   color: white;
 }
 
+.header {
+  height: 50px; /* Default height */
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 80px; /* Increased height for smaller screens */
+  }
+}
+
+.responsive-wrapper {
+  padding-top: 60px; /* Default padding */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .responsive-wrapper {
+    padding-top: 100px; /* Increased padding for smaller screens */
+  }
+}
+
+
 .header-text {
   font-size: 22px; /* Adjust the font size as needed */
 }
