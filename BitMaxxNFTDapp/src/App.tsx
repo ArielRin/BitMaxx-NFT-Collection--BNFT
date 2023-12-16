@@ -36,10 +36,10 @@ import yourGif from './nft.gif';
 
 import btm from './btm.png';
 
-
-const SPLITTER_CONTRACT_ADDRESS = '0x4462b3D79f607B8F0DcdB7475E553333423ec740'; // cheyne test splitter
 //
-// const SPLITTER_CONTRACT_ADDRESS = '0xf713Ee496D8bAc31E8f8AaC61b374C609982c94C'; // live
+// const SPLITTER_CONTRACT_ADDRESS = '0x4462b3D79f607B8F0DcdB7475E553333423ec740'; // cheyne test splitter
+
+const SPLITTER_CONTRACT_ADDRESS = '0xf713Ee496D8bAc31E8f8AaC61b374C609982c94C'; // live
 
 const CONTRACT_ADDRESS = '0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38'; // 2nd maxxtest 0x0e644A552B34A8F1e276bc91ADA11e25411aEF44
 // const CONTRACT_ADDRESS = '0x27B327315cb8EFBD671FDf82730a3bD25563aea5'; // first maxx test 2
@@ -546,6 +546,7 @@ useEffect(() => {
   fetchTotalDistributed();
 }, []);
 
+//syncpayee
 
 
   return (
@@ -847,7 +848,7 @@ To process rewards, ensure SafuMaxx has been sent to contract as follows {SPLITT
       bg: '#4d9795',
     }}
   >
-    2. Distribute SafuMaxx Rewards
+    2. Distribute Rewards
   </Button>
 </div>
 
