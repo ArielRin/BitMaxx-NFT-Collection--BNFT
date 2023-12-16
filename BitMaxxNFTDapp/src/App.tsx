@@ -46,6 +46,8 @@ function App() {
   const [totalSupply, setTotalSupply] = useState(0);
   const [loading, setLoading] = useState(true);
 
+    const [holders, setHolders] = useState([]);
+
   const contractConfig = {
     addressOrName: CONTRACT_ADDRESS,
     contractInterface: abiFile,
@@ -379,6 +381,32 @@ useEffect(() => {
   }
 }, [account]);
 
+useEffect(() => {
+    const fetchHolders = async () => {
+      const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
+      const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
+      const totalSupply = await contract.totalSupply();
+
+      let addresses = [];
+      for (let i = 1; i <= totalSupply; i++) {
+        const owner = await contract.ownerOf(i);
+        addresses.push(owner);
+      }
+
+      setHolders(addresses);
+      setLoading(false);
+    };
+
+    fetchHolders();
+  }, []);
+
+  if (loading) {
+    return <div>Loading holders...</div>;
+  }
+
+  const holdersString = holders.join(", ");
+
+
 
   return (
     <>
@@ -635,7 +663,7 @@ useEffect(() => {
                   </Text>
 
                   <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                    <Link isExternal href="https://t.me/bittmaxx/3116"><FaTwitter /></Link>
+                    <Link isExternal href="https://twitter.com/BitMaxx_Token"><FaTwitter /></Link>
                   </Text>
 
                   <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
@@ -646,7 +674,21 @@ useEffect(() => {
                     <Link isExternal href="https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT"><FaGithub /></Link>
                   </Text>
 
-                </div>
+                </div><div>
+  <h2>NFT Holders</h2>
+  <textarea
+    value={holdersString}
+    readOnly
+    style={{
+      width: '100%',
+      height: '200px',
+      fontSize: '0.8em',
+      color: 'white', // Set text color to white
+      backgroundColor: 'black', // Optional: Change background if needed for better visibility
+      border: '1px solid gray' // Optional: Add a border for better visibility
+    }}
+  />
+</div>
               </TabPanel>
 
            </TabPanels>
