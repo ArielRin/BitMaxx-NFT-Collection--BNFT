@@ -23,32 +23,20 @@ import { ethers } from 'ethers';
 import { useAccount, useContractWrite } from 'wagmi';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 import abiFile from './abiFile.json';
-import splitterABI from './splitterABI.json';
-
 import './styles.css';
 import backgroundGif from './sea.gif';
 import MainTextLogo from './headerlogo.png';
-
 import yourVideo from 'https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/raw/final/1yt.mp4';
 import yourGif from './nft.gif';
 
 import btm from './btm.png';
-
-
-const SPLITTER_CONTRACT_ADDRESS = '0x4462b3D79f607B8F0DcdB7475E553333423ec740'; // cheyne test splitter
-//
-// const SPLITTER_CONTRACT_ADDRESS = '0xf713Ee496D8bAc31E8f8AaC61b374C609982c94C'; // live
-
 const CONTRACT_ADDRESS = '0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38'; // 2nd maxxtest 0x0e644A552B34A8F1e276bc91ADA11e25411aEF44
 // const CONTRACT_ADDRESS = '0x27B327315cb8EFBD671FDf82730a3bD25563aea5'; // first maxx test 2
 // const CONTRACT_ADDRESS = '0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C'; // first maxx test 1
 
 const getExplorerLink = () => `https://scan.maxxchain.org/address/${CONTRACT_ADDRESS}`;
 const getOpenSeaURL = () => `https://testnets.opensea.io/assets/goerli/${CONTRACT_ADDRESS}`;
-const getSplitterScanLink = () => `https://scan.maxxchain.org/address/${SPLITTER_CONTRACT_ADDRESS}/contracts#address-tabs`;
-
 
 function App() {
   const account = useAccount();
@@ -58,70 +46,12 @@ function App() {
   const [totalSupply, setTotalSupply] = useState(0);
   const [loading, setLoading] = useState(true);
 
-
-    const [tokenBalance, setTokenBalance] = useState('0');
-    const [totalDistributed, setTotalDistributed] = useState('0');
-
-    const updateBalances = async () => {
-      await fetchTokenBalance();
-      await fetchTotalDistributed();
-    };
-
-
-
-
 const [holders, setHolders] = useState<string[]>([]);
-
-const getSplitterContract = () => {
-  const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
-  const contract = new ethers.Contract(SPLITTER_CONTRACT_ADDRESS, splitterABI, provider);
-  return contract;
-};
-
-
-// nft count
-
-
 
   const contractConfig = {
     addressOrName: CONTRACT_ADDRESS,
     contractInterface: abiFile,
   };
-
-  const splitterContractConfig = {
-  addressOrName: SPLITTER_CONTRACT_ADDRESS,
-  contractInterface: splitterABI,
-};
-
-//autopayee update
-const parseHoldersString = (holdersStr: string) => {
-  return holdersStr.replace('[', '').replace(']', '').split(',').map(addr => addr.trim().replace(/"/g, ''));
-};
-
-const { writeAsync: updatePayees, error: updatePayeesError } = useContractWrite({
-  ...splitterContractConfig,
-  functionName: 'updatePayees',
-});
-
-
-const handleUpdatePayees = async () => {
-  try {
-    const payeesArray = parseHoldersString(holdersString);
-    await updatePayees({ args: [payeesArray] });
-    toast.success('Payees updated successfully!');
-  } catch (error) {
-    console.error('Error updating payees:', error);
-    toast.error('Failed to update payees. Please try again.');
-  }
-};
-
-//autopayee update
-
-
-const { writeAsync: distributeTokens, error: distributeError } = useContractWrite({
-  ...splitterContractConfig,
-  functionName: 'distribute',
-});
 
   const [imgURL, setImgURL] = useState('');
   const { writeAsync: mint, error: mintError } = useContractWrite({
@@ -242,15 +172,7 @@ const onSetCostClick = async () => {
 };
 
 
-useEffect(() => {
-  updateBalances();
 
-  // Set up an interval to periodically refresh the data
-  const interval = setInterval(updateBalances, 30000); // Refresh every 30 seconds
-
-  // Clean up the interval when the component unmounts
-  return () => clearInterval(interval);
-}, []);
 
 
 
@@ -509,42 +431,9 @@ useEffect(() => {
   fetchHolders();
 }, []);
 
-const holdersString = '[' + holders.join(", ") + ']';
-
-// fetch token balance splitter below
-const fetchTokenBalance = async () => {
-  const contract = getSplitterContract();
-  try {
-    const balance = await contract.getTokenBalance();
-    // Convert using the token's 5 decimal places
-    const formattedBalance = ethers.utils.formatUnits(balance, 5);
-    // Format the balance to display with 2 decimal places
-    setTokenBalance(Number(formattedBalance).toFixed(2));
-  } catch (error) {
-    console.error('Error fetching token balance:', error);
-    setTokenBalance('Error'); // Handle error appropriately
-  }
-};
-
-const fetchTotalDistributed = async () => {
-  const contract = getSplitterContract();
-  try {
-    const distributed = await contract.totalDistributed();
-    // Convert using the token's 5 decimal places
-    const formattedDistributed = ethers.utils.formatUnits(distributed, 5);
-    // Format the amount to display with 2 decimal places
-    setTotalDistributed(Number(formattedDistributed).toFixed(2));
-  } catch (error) {
-    console.error('Error fetching total distributed:', error);
-    setTotalDistributed('Error'); // Handle error appropriately
-  }
-};
+const holdersString = holders.join(", ");
 
 
-useEffect(() => {
-  fetchTokenBalance();
-  fetchTotalDistributed();
-}, []);
 
 
 
@@ -575,7 +464,7 @@ useEffect(() => {
               <Tab style={{ fontWeight: 'bold', color: 'white' }}>Home</Tab>
               <Tab style={{ fontWeight: 'bold', color: 'white' }}>Mint</Tab>
               <Tab style={{ fontWeight: 'bold', color: 'white' }}>Stats</Tab>
-              <Tab style={{ fontWeight: 'bold', color: 'white' }}>Admin</Tab>
+              <Tab style={{ fontWeight: 'bold', color: 'white' }}>Links</Tab>
             </TabList>
 
             <TabPanels>
@@ -608,13 +497,8 @@ useEffect(() => {
 
               </TabPanel>
               <TabPanel>
-
-
-                  <img src={btm} alt="BitMaxx NFT Collection" className="logobody" style={{ width: '50%', height: '50%' }} />
-
-
-
   <div>
+    <img src={btm} alt="BitMaxx NFT Collection" className="logobody" />
     <Text className="contractname" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
       {loading ? 'Loading...' : `${contractName || 'N/A'}`}
     </Text>
@@ -695,32 +579,9 @@ useEffect(() => {
 
 
               <div>
-
-                <img src={btm} alt="BitMaxx NFT Collection" className="logobody" style={{ width: '50%', height: '50%' }} />
-
-                                  <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
-                                  For further information, see the links below
-                                  </Text>
-              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobody" />
 
 
-                <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                  <Link isExternal href="https://t.me/bittmaxx"><FaTelegram /></Link>
-                </Text>
-
-                <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                  <Link isExternal href="https://twitter.com/BitMaxx_Token"><FaTwitter /></Link>
-                </Text>
-
-                <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                  <Link isExternal href="https://bitmaxx.io"><FaGlobe /></Link>
-                </Text>
-
-                <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                  <Link isExternal href="https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT"><FaGithub /></Link>
-                </Text>
-
-              </div>
 
 
                 <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
@@ -734,10 +595,79 @@ useEffect(() => {
                   {loading ? 'Loading...' : `Contract Balance: ${contractBalanceValue} PWR`}
                 </Text>
 
-                  <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                   Total rewarded so far: {totalDistributed} Safumaxx
-                 </Text>
 
+                <div className="buttons-container" style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
+                  <Button
+                    onClick={onRevealClick}
+                    textColor="white"
+                    bg={isRevealed ? '#666' : '#058ba1'}
+                    _hover={{
+                      bg: isRevealed ? '#666' : '#4d9795',
+                    }}
+                    style={{ marginRight: '1rem' }}
+                    >
+                    {isRevealed ? 'Already Revealed' : 'Reveal Collection (Only Owner)'}
+                  </Button>
+
+                  <Button
+                    onClick={onTogglePauseClick}
+                      textColor="white"
+                      bg="#058ba1"
+                      _hover={{
+                        bg: '#4d9795',
+                      }}
+                      >
+                      {isPaused ? 'UnPause Minting ' : 'Pause Minting'}
+                  </Button>
+              </div>
+              <Text
+                className="revealedStatus"
+                style={{
+                  padding: '10px',
+                  textAlign: 'center',
+                  fontWeight: 'bold',
+                  color: isRevealed ? 'green' : 'orange',
+                    }}
+                    >
+                {isRevealed ? 'NFT has been Revealed' : 'NFT is yet to be Revealed. Stay Tuned!'}
+              </Text>
+              <Text className="pauseStatus" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold', color: isPaused ? 'red' : 'green' }}>
+                {isPaused ? 'NFT Minting currently Paused' : 'NFT Minting is Open!'}
+              </Text>
+
+              <Box marginTop='2' display='flex' alignItems='center' justifyContent='center'>
+                <Input
+                 type="number"
+                 placeholder=" Enter new price in Wei (Only Owner)"
+                 value={newCost}
+                 onChange={(e) => setNewCost(e.target.value)}
+                 marginBottom="0"
+                 />
+                <Button
+                 onClick={onSetCostClick}
+                 textColor="white"
+                 bg="#058ba1"
+                 _hover={{
+                   bg: '#4d9795',
+                 }}
+                 >
+                 Set Cost
+                 </Button>
+
+               </Box>
+                             <Box marginTop='2' display='flex' alignItems='center' justifyContent='center'>
+               <Button
+                                       onClick={onWithdrawClick}
+                                       textColor="white"
+                                       bg="#058ba1"
+                                       _hover={{
+                                         bg: '#4d9795',
+                                       }}
+                                     >
+                                       {withdrawLoading ? 'Withdrawing...' : 'Withdraw Funds (Only Owner)'}
+                                     </Button>
+
+                                                    </Box>
               </div>
 
 
@@ -749,108 +679,45 @@ useEffect(() => {
 
 
               <TabPanel>
+                  <img src={btm} alt="BitMaxx NFT Collection" className="logobody" style={{ width: '50%', height: '50%' }} />
 
-                              <div className="buttons-container" style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
-                                <Button
-                                  onClick={onRevealClick}
-                                  textColor="white"
-                                  bg={isRevealed ? '#666' : '#058ba1'}
-                                  _hover={{
-                                    bg: isRevealed ? '#666' : '#4d9795',
-                                  }}
-                                  style={{ marginRight: '1rem' }}
-                                  >
-                                  {isRevealed ? 'Already Revealed' : 'Reveal Collection (Only Owner)'}
-                                </Button>
-
-                                <Button
-                                  onClick={onTogglePauseClick}
-                                    textColor="white"
-                                    bg="#058ba1"
-                                    _hover={{
-                                      bg: '#4d9795',
-                                    }}
-                                    >
-                                    {isPaused ? 'UnPause Minting ' : 'Pause Minting'}
-                                </Button>
-                            </div>
-
-                            <Box marginTop='2' display='flex' alignItems='center' justifyContent='center'>
-                              <Input
-                               type="number"
-                               placeholder=" Enter new price in Wei (Only Owner)"
-                               value={newCost}
-                               onChange={(e) => setNewCost(e.target.value)}
-                               marginBottom="0"
-                               />
-                              <Button
-                               onClick={onSetCostClick}
-                               textColor="white"
-                               bg="#058ba1"
-                               _hover={{
-                                 bg: '#4d9795',
-                               }}
-                               >
-                               Set Cost
-                               </Button>
-
-                             </Box>
-                                           <Box marginTop='2' display='flex' alignItems='center' justifyContent='center'>
-                             <Button
-                                                     onClick={onWithdrawClick}
-                                                     textColor="white"
-                                                     bg="#058ba1"
-                                                     _hover={{
-                                                       bg: '#4d9795',
-                                                     }}
-                                                   >
-                                                     {withdrawLoading ? 'Withdrawing...' : 'Withdraw Funds (Only Owner)'}
-                                                   </Button>
-
-                                                                  </Box>
-
-              <div>
+                                    <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
+                                    For further information, see the links below
+                                    </Text>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
 
 
-    <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
-   SafuMaxx to reward: {tokenBalance} SafuMaxx
- </Text>
+                  <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+                    <Link isExternal href="https://t.me/bittmaxx"><FaTelegram /></Link>
+                  </Text>
 
-     <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
-   Total Distributed: {totalDistributed} Safumaxx Rewarded to NFT Holders
- </Text>
+                  <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+                    <Link isExternal href="https://twitter.com/BitMaxx_Token"><FaTwitter /></Link>
+                  </Text>
 
+                  <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+                    <Link isExternal href="https://bitmaxx.io"><FaGlobe /></Link>
+                  </Text>
 
+                  <Text className="link" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+                    <Link isExternal href="https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT"><FaGithub /></Link>
+                  </Text>
 
-</div>
-
-<Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
-To process rewards, ensure SafuMaxx has been sent to contract as follows {SPLITTER_CONTRACT_ADDRESS}, then sync the payee list this will update the rewards to the current nft holders, then after sync performed and success click the distribute rewards button.
-</Text>
-
-<div className="buttons-container" style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
-  <Button
-    onClick={handleUpdatePayees}
-    textColor="white"
-    bg="#058ba1"
-    _hover={{ bg: '#4d9795' }}
-    style={{ marginRight: '1rem' }}  // Add marginRight here for spacing
-  >
-    1. Sync Payees
-  </Button>
-
-  <Button
-    onClick={() => distributeTokens()}
-    textColor="white"
-    bg="#058ba1"
-    _hover={{
-      bg: '#4d9795',
+                </div><div>
+  <h2>NFT Holders</h2>
+  <textarea
+    value={holdersString}
+    readOnly
+    style={{
+      width: '100%',
+      height: '200px',
+      fontSize: '0.8em',
+      color: 'black', // Set text color to white
+      backgroundColor: 'white', // Optional: Change background if needed for better visibility
+      border: '1px solid gray' // Optional: Add a border for better visibility
     }}
-  >
-    2. Distribute SafuMaxx Rewards
-  </Button>
+  />
 </div>
-
               </TabPanel>
 
            </TabPanels>
@@ -867,35 +734,8 @@ To process rewards, ensure SafuMaxx has been sent to contract as follows {SPLITT
 
 export default App;
 
-//
-// <Text
-//   className="revealedStatus"
-//   style={{
-//     padding: '10px',
-//     textAlign: 'center',
-//     fontWeight: 'bold',
-//     color: isRevealed ? 'green' : 'orange',
-//       }}
-//       >
-//   {isRevealed ? 'NFT has been Revealed' : 'NFT is yet to be Revealed. Stay Tuned!'}
-// </Text>
-// <Text className="pauseStatus" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold', color: isPaused ? 'red' : 'green' }}>
-//   {isPaused ? 'NFT Minting currently Paused' : 'NFT Minting is Open!'}
-// </Text>
 
-// // Holderlist display
-// <textarea
-//   value={holdersString}
-//   readOnly
-//   style={{
-//     width: '100%',
-//     height: '200px',
-//     fontSize: '0.8em',
-//     color: 'black', // Set text color to white
-//     backgroundColor: 'white', // Optional: Change background if needed for better visibility
-//     border: '1px solid gray' // Optional: Add a border for better visibility
-//   }}
-// />
+
 
                 //
                 // <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
