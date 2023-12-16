@@ -4,7 +4,7 @@
 BetaTesting Dapp https://gentle-liger-4162d5.netlify.app/
 
 
-![BitMaxx NFT Collection](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/master/twitter.jpg)
+![BitMaxx NFT Collection](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/finals2/Assets/twitter.png)
 
 ## Introduction
 
@@ -12,9 +12,9 @@ Welcome to the BitMaxx NFT Collection! This collection is built on the MaxxChain
 
 
 
-![Admin Page](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/master/admin.jpg)
+![Admin Page](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/finals2/Assets/admin.png)
 
-![Home](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/master/home.jpg)
+![Home](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/finals2/Assets/home.png)
 
 ## About MaxxChain
 
