@@ -85,15 +85,18 @@ The Admin tab is critical for managing the NFT collection effectively. It provid
 **Note**: This document is for informational purposes only and is subject to change. Admins should exercise caution and understand the implications of each action before proceeding.
 
 
-## TEST CHEAP MINT 0.000001 PWR
-https://scan.maxxchain.org/address/0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C/contracts#address-tabs
+
+## FINAL NFT Contract Deployed on Chains
+MaxxChain https://scan.maxxchain.org/address/0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38/contracts#address-tabs
 
 
-## FINAL Deployed on Chains
-MaxxChain https://scan.maxxchain.org/address/0x9F3c6e1bD483cd977DF9B36734E1cD684f1Be621/contracts#address-tabs
+## SwapperSafuSendTreasuryRewards Deployed on Chains
+MaxxChain https://scan.maxxchain.org/address/0x70807A0d4871B18062EE72d32C91C3d393a067f6/contracts#address-tabs
+
+
+## TreasuryNFTRewardsDistributor Deployed on Chains
+MaxxChain https://scan.maxxchain.org/address/0xf713Ee496D8bAc31E8f8AaC61b374C609982c94C/contracts#address-tabs
 
 
 BSC https://bscscan.com/address/0xca49ba54685a1ebac3cde68464e57edeb0bda040#code
 
-
-Fantom https://ftmscan.com/address/0xd8aeaa65e556d05a662128878c2d9e17ab80b5bf#code
