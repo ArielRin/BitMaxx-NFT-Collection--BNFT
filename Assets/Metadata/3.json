@@ -1,12 +1,9 @@
+
 {
-  "name": "BitMaxx NFT Collection #3",
-  "description": "a limited edition series that pushes the boundaries of digital art and innovation. Each NFT in this exclusive collection is priced at 5000PWR, representing a fusion of cutting-edge technology and artistic expression. With a total supply restricted to just 200 minted on the groundbreaking Maxx Chain.",
-  "animation": "https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/master/Assets/Image/3.mp4",
-  "animation_url": "https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/master/Assets/Image/3.mp4",
-  "image": "https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/master/Assets/Image/4.png",
-  "dna": "4d0483da459cc7922f33bb9512475fc5fb361c87",
-  "edition": 3,
-  "date": 1700015402308,
+  "name": "RoboGenesis #003",
+  "description": "RoboGenesis #003 is a unique digital collectible from the futuristic world of RoboGenesis. This NFT features an intricate, animated design of a cutting-edge robot, showcasing the harmony of technology and art.",
+  "image": "https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/master/Assets/Image/2.png",
+  "animation_url": "https://ipfs.io/ipfs/bafybeiflhkmfkwfwnvu4ek3cwu57vkkz6x3rrnrmpyo7yd6zql5m5is6ny/1.mp4",
   "attributes": [
     {
       "trait_type": "Background",
@@ -18,8 +15,19 @@
     },
     {
       "trait_type": "Edition",
-      "value": "Steel"
+      "value": "Iron"
+    },
+    {
+      "trait_type": "Series",
+      "value": "RoboGenesis"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Robot"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "1"
     }
-  ],
-  "compiler": "ArielRyn Art Generation 2023"
+  ]
 }
