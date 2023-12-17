@@ -98,5 +98,4 @@ MaxxChain https://scan.maxxchain.org/address/0x70807A0d4871B18062EE72d32C91C3d39
 MaxxChain https://scan.maxxchain.org/address/0xf713Ee496D8bAc31E8f8AaC61b374C609982c94C/contracts#address-tabs
 
 
-BSC https://bscscan.com/address/0xca49ba54685a1ebac3cde68464e57edeb0bda040#code
 
