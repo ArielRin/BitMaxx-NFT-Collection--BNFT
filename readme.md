@@ -1,7 +1,7 @@
 # BitMaxx NFT Collection
 
 
-BetaTesting Dapp https://gentle-liger-4162d5.netlify.app/
+Dapp is Live at: https://nft.bitmaxx.io/
 
 
 ![BitMaxx NFT Collection](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/finals2/Assets/twitter.png)
