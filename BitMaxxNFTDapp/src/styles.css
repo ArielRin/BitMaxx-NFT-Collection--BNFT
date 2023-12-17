@@ -110,6 +110,14 @@ header {
 }
 
 
+.nftboxwrapper {
+    background-color: rgba(12, 12, 12, 0.65);
+    min-height: 250px;
+    margin: 20px auto;
+    border-radius: 2rem;
+}
+
+
 .bodywrapper {
   display: flex;
   justify-content: center;

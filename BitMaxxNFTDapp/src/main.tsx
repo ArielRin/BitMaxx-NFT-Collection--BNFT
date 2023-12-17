@@ -18,7 +18,7 @@ const maxxChain: Chain = {
     symbol: 'PWR',
   },
   rpcUrls: {
-    default: 'https://mainrpc4.maxxchain.org/',
+    default: 'https://rpc.maxxchain.org/',
   },
   blockExplorers: {
     default: { name: 'Maxx Explorer', url: 'https://scan.maxxchain.org/' },
@@ -63,7 +63,7 @@ const { connectors } = getDefaultWallets({
 });
 
 const wagmiClient = createClient({
-  autoConnect: false,
+  autoConnect: true,
   connectors,
   provider,
 });

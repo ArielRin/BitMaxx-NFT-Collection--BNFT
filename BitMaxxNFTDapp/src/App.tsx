@@ -36,7 +36,15 @@ import yourVideo from 'https://github.com/ArielRin/BitMaxx-NFT-Collection--BNFT/
 import yourGif from './nft.gif';
 
 import btm from './btm.png';
+import btm3 from './btm2.png';
 
+
+import btm2 from './nft.gif';
+
+type Nft = {
+    tokenId: number;
+    // Add other properties if needed
+};
 //
 // const SPLITTER_CONTRACT_ADDRESS = '0x4462b3D79f607B8F0DcdB7475E553333423ec740'; // cheyne test splitter
 
@@ -50,36 +58,56 @@ const getExplorerLink = () => `https://scan.maxxchain.org/address/${CONTRACT_ADD
 const getOpenSeaURL = () => `https://testnets.opensea.io/assets/goerli/${CONTRACT_ADDRESS}`;
 const getSplitterScanLink = () => `https://scan.maxxchain.org/address/${SPLITTER_CONTRACT_ADDRESS}/contracts#address-tabs`;
 
-
+// ###################################
+// ###################################
+// ###################################
+// ###################################
+// ###################################
+// ###################################
+// ###################################
+// ###################################
+// ###################################
+// ###################################
+// ###################################
+// ###################################
 function App() {
+
+
   const account = useAccount();
     console.log('Connected wallet address:', account);
+
+  const [tabIndex, setTabIndex] = useState(0);
 
   const [contractName, setContractName] = useState('');
   const [totalSupply, setTotalSupply] = useState(0);
   const [loading, setLoading] = useState(true);
 
+  const [userNfts, setUserNfts] = useState<Nft[]>([]); // Update the state declaration
 
-    const [tokenBalance, setTokenBalance] = useState('0');
-    const [totalDistributed, setTotalDistributed] = useState('0');
+  const [tokenBalance, setTokenBalance] = useState('0');
+  const [totalDistributed, setTotalDistributed] = useState('0');
 
     const updateBalances = async () => {
       await fetchTokenBalance();
       await fetchTotalDistributed();
     };
 
-
+    const openMintTab = () => {
+      setTabIndex(1); // Assuming 'Mint' tab is at index 1
+    };
 
 
 const [holders, setHolders] = useState<string[]>([]);
 
 const getSplitterContract = () => {
-  const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
+  const provider = new ethers.providers.JsonRpcProvider('https://rpc.maxxchain.org/');
   const contract = new ethers.Contract(SPLITTER_CONTRACT_ADDRESS, splitterABI, provider);
   return contract;
 };
 
-
+const getTokenLink = (tokenId: number) => {
+  return `https://scan.maxxchain.org/token/${CONTRACT_ADDRESS}/instance/${tokenId}/metadata`;
+};
 // nft count
 
 
@@ -183,7 +211,7 @@ const { writeAsync: distributeTokens, error: distributeError } = useContractWrit
       setTotalSupply((prevTotalSupply) => prevTotalSupply + mintAmount);
 
       // Update contract balance after successful mint
-      const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
+      const provider = new ethers.providers.JsonRpcProvider('https://rpc.maxxchain.org/');
       const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
       const balance = await contract.getContractBalance();
       setContractBalanceValue(parseFloat(ethers.utils.formatEther(balance)));
@@ -264,7 +292,7 @@ useEffect(() => {
   useEffect(() => {
     async function fetchContractData() {
       try {
-        const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
+        const provider = new ethers.providers.JsonRpcProvider('https://rpc.maxxchain.org/');
         const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
         const name = await contract.name();
         const supply = await contract.totalSupply();
@@ -292,7 +320,7 @@ const [cost, setCost] = useState('0');
 useEffect(() => {
   async function fetchCost() {
     try {
-      const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
+      const provider = new ethers.providers.JsonRpcProvider('https://rpc.maxxchain.org/');
       const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
 
       // Read the cost value directly from the contract
@@ -313,7 +341,7 @@ const [isPaused, setIsPaused] = useState(false);
 useEffect(() => {
   async function fetchPauseStatus() {
     try {
-      const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
+      const provider = new ethers.providers.JsonRpcProvider('https://rpc.maxxchain.org/');
       const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
 
       // Read the paused status directly from the contract
@@ -335,7 +363,7 @@ const [isRevealed, setIsRevealed] = useState(false);
   useEffect(() => {
     async function fetchRevealStatus() {
       try {
-        const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
+        const provider = new ethers.providers.JsonRpcProvider('https://rpc.maxxchain.org/');
         const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
 
         // Read the revealed status directly from the contract
@@ -371,7 +399,7 @@ const [isRevealed, setIsRevealed] = useState(false);
       toast.success('Funds withdrawn successfully!');
 
       // Update contract balance after successful withdrawal
-      const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
+      const provider = new ethers.providers.JsonRpcProvider('https://rpc.maxxchain.org/');
       const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
       const balance = await contract.getContractBalance();
       setContractBalanceValue(parseFloat(ethers.utils.formatEther(balance)));
@@ -415,7 +443,7 @@ const [isRevealed, setIsRevealed] = useState(false);
   useEffect(() => {
     async function fetchContractBalance() {
       try {
-        const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
+        const provider = new ethers.providers.JsonRpcProvider('https://rpc.maxxchain.org/');
         const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
 
         // Read the contract balance directly from the contract
@@ -441,7 +469,7 @@ useEffect(() => {
       const userAddress = account.address;
 
       if (userAddress && ethers.utils.isAddress(userAddress)) {
-        const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
+        const provider = new ethers.providers.JsonRpcProvider('https://rpc.maxxchain.org/');
         const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
 
         // Call the balanceOf function to get the user's NFT balance
@@ -466,7 +494,7 @@ useEffect(() => {
 const fetchHolders = async () => {
   setLoading(true);
   try {
-    const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
+    const provider = new ethers.providers.JsonRpcProvider('https://rpc.maxxchain.org/');
     const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
     const totalSupply = await contract.totalSupply();
 
@@ -493,7 +521,7 @@ useEffect(() => {
 
 useEffect(() => {
   const fetchHolders = async () => {
-    const provider = new ethers.providers.JsonRpcProvider('https://mainrpc4.maxxchain.org/');
+    const provider = new ethers.providers.JsonRpcProvider('https://rpc.maxxchain.org/');
     const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
     const totalSupply = await contract.totalSupply();
 
@@ -547,7 +575,33 @@ useEffect(() => {
   fetchTotalDistributed();
 }, []);
 
-//syncpayee
+//view NFT
+
+const fetchUserNfts = async () => {
+    if (!account || !account.address) return;
+
+    try {
+        const provider = new ethers.providers.JsonRpcProvider('https://rpc.maxxchain.org/');
+        const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
+        const balance = await contract.balanceOf(account.address);
+
+        let nfts: Nft[] = [];
+        for (let i = 0; i < balance; i++) {
+            const tokenId = await contract.tokenOfOwnerByIndex(account.address, i);
+            nfts.push({ tokenId: Number(tokenId) });
+        }
+        setUserNfts(nfts);
+    } catch (error) {
+        console.error('Error fetching user NFTs:', error);
+        // Handle the error appropriately. For example, you might want to set an error state, show a message, etc.
+    }
+};
+
+
+  // Fetch user NFTs when account changes
+  useEffect(() => {
+    fetchUserNfts();
+  }, [account]);
 
 
   return (
@@ -555,7 +609,7 @@ useEffect(() => {
       <ToastContainer />
 
       <header className="header">
-        <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobodyhead" />
+          <img src={MainTextLogo} alt="BitMaxx NFT Collection" className="logobodyhead" />
         <div className="connect-button">
           <ConnectButton />
         </div>
@@ -569,7 +623,7 @@ useEffect(() => {
 }}>
         <div className="mainboxwrapper" >
           <Container className="container" paddingY="4">
-          <Tabs isFitted variant="enclosed">
+          <Tabs index={tabIndex} onChange={(index) => setTabIndex(index)} isFitted variant="enclosed">
             <TabList>
               <Tab style={{ fontWeight: 'bold', color: 'white' }}>Home</Tab>
               <Tab style={{ fontWeight: 'bold', color: 'white' }}>Mint</Tab>
@@ -601,6 +655,12 @@ useEffect(() => {
                   {isPaused ? 'NFT Minting currently Paused' : 'NFT Minting is Open!'}
                 </Text>
               </div>
+              <Box marginTop='2' display='flex' alignItems='center' justifyContent='center'>
+                <Button bg='#058ba1' textColor='white' onClick={openMintTab}>Open Minting Page</Button>
+              </Box>
+
+
+
 
               <Text className="pricecost" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
                {totalDistributed} Safumaxx Already Rewarded to NFT Holders
@@ -719,14 +779,35 @@ useEffect(() => {
                   {loading ? 'Loading...' : `Contract Balance: ${contractBalanceValue} PWR`}
                 </Text>
                 <Text className="pricecost" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                Pending NFT Rewards: {tokenBalance} SafuMaxx
+                Total pending NFT Rewards: {tokenBalance} SafuMaxx
                 </Text>
 
                   <Text className="setCost" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                   Total rewarded so far: {totalDistributed} Safumaxx
+                   Total rewarded to holders: {totalDistributed} Safumaxx
                  </Text>
 
               </div>
+
+              <div className="nftboxwrapper" >
+
+              <Text className="pricecost" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+    BitMaxx Nfts in your Wallet
+  </Text>
+
+  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '10px', justifyContent: 'center' }}>
+    {userNfts.map((nft) => (
+      <div key={nft.tokenId.toString()} style={{ textAlign: 'center' }}>
+        <Text>
+          <Link isExternal href={getTokenLink(nft.tokenId)}>
+            BitMaxx NFT OWNED TokenID {nft.tokenId.toString()}
+            <img src={btm2} alt={`NFT ${nft.tokenId.toString()}`} style={{ width: '100%', maxWidth: '250px', margin: 'auto', borderRadius: '30px' }} />
+
+          </Link>
+        </Text>
+      </div>
+    ))}
+  </div>
+</div>
 
 
 
@@ -858,7 +939,7 @@ Pending NFT Rewards: {tokenBalance} SafuMaxx
 Total Distributed: {totalDistributed} Safumaxx Rewarded to NFT Holders
 </Text>
 
-              </TabPanel>
+</TabPanel>
 
            </TabPanels>
           </Tabs>
@@ -894,6 +975,18 @@ Total Distributed: {totalDistributed} Safumaxx Rewarded to NFT Holders
 }
 
 export default App;
+
+
+
+
+//
+// {userNfts.map((nft) => (
+//   <div key={nft.tokenId.toString()}>
+//     <img src={btm} alt={`NFT ${nft.tokenId.toString()}`} style={{ width: '100%' }} />
+//     <Text>Token ID: {nft.tokenId.toString()}</Text>
+//   </div>
+// ))}
+
 
 //
 
