@@ -80,9 +80,6 @@ The BitMaxx NFT Collection, built on the MaxxChain network, offers a unique digi
 ## Admin Tab Usage
 The Admin tab is critical for managing the NFT collection effectively. It provides control over key elements of the collection, ensuring a smooth and efficient operation. Its intuitive design allows for easy access and execution of administrative tasks.
 
-## Conclusion
-The Admin tab in the BitMaxx NFT Collection interface is a powerful tool for collection administrators. It offers essential functionalities for managing the minting process, setting prices, withdrawing funds, and distributing rewards, ensuring the collection's success and sustainability.
-
 ---
 
 **Note**: This document is for informational purposes only and is subject to change. Admins should exercise caution and understand the implications of each action before proceeding.
