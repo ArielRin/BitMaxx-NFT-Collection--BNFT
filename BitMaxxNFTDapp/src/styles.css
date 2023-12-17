@@ -35,9 +35,20 @@ header {
   color: white;
 }
 
-.header {
-  height: 50px; /* Default height */
+/* Fix the header to the top */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other content */
 }
+
+/* Add a background color to the header if not already set */
+.header-content {
+  background-color: #222; /* Example color */
+}
+
+
 
 @media (max-width: 600px) {
   .header {
@@ -73,10 +84,20 @@ header {
   height: 100vh;
   background-color: #222; /* Change the background color as needed */
 }
+
+/* Ensure the main content container is scrollable */
+.main-content {
+  margin-top: [Height of the Header]; /* Adjust this to the height of your header */
+  max-height: calc(100vh - [Height of the Header]);
+  overflow-y: auto;
+  min-height: 100vh
+
+}
+
 .mainboxwrapper {
     background-color: rgba(12, 12, 12, 0.75);
     min-height: 200px;
-    width: %;
+    width: 85%;
     margin: 20px auto;
     border-radius: 2rem;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -85,8 +106,10 @@ header {
     display: flex;
     padding: 2px;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 100px;
 }
+
+
 .bodywrapper {
   display: flex;
   justify-content: center;

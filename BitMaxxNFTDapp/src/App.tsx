@@ -561,13 +561,13 @@ useEffect(() => {
         </div>
       </header>
 
-      <div className="wrapper responsive-wrapper" style={{
+      <div className="main-content"  style={{
     backgroundColor: 'black',
     color: 'white',
     backgroundImage: `url(${backgroundGif})`,
     backgroundSize: 'cover',
 }}>
-        <div className="mainboxwrapper">
+        <div className="mainboxwrapper" >
           <Container className="container" paddingY="4">
           <Tabs isFitted variant="enclosed">
             <TabList>
@@ -601,6 +601,11 @@ useEffect(() => {
                   {isPaused ? 'NFT Minting currently Paused' : 'NFT Minting is Open!'}
                 </Text>
               </div>
+
+              <Text className="pricecost" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+               {totalDistributed} Safumaxx Already Rewarded to NFT Holders
+              </Text>
+
 
 
 
@@ -713,8 +718,11 @@ useEffect(() => {
                 <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
                   {loading ? 'Loading...' : `Contract Balance: ${contractBalanceValue} PWR`}
                 </Text>
+                <Text className="pricecost" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+                Pending NFT Rewards: {tokenBalance} SafuMaxx
+                </Text>
 
-                  <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+                  <Text className="setCost" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
                    Total rewarded so far: {totalDistributed} Safumaxx
                  </Text>
 
@@ -754,6 +762,13 @@ useEffect(() => {
                                     {isPaused ? 'UnPause Minting ' : 'Pause Minting'}
                                 </Button>
                             </div>
+                            <Text className="pauseStatus" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold', color: isPaused ? 'red' : 'green' }}>
+                              {isPaused ? 'NFT Minting currently Paused' : 'NFT Minting is Open!'}
+                            </Text>
+                            <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+                              {loading ? 'Loading...' : `NFT Price: ${cost} PWR`}
+                            </Text>
+                            <div className="buttons-container" style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
 
                             <Box marginTop='2' display='flex' alignItems='center' justifyContent='center'>
                               <Input
@@ -775,6 +790,11 @@ useEffect(() => {
                                </Button>
 
                              </Box>
+                             </div>
+
+                             <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+                               {loading ? 'Loading...' : `Contract Balance: ${contractBalanceValue} PWR`}
+                             </Text>
                                            <Box marginTop='2' display='flex' alignItems='center' justifyContent='center'>
                              <Button
                                                      onClick={onWithdrawClick}
@@ -792,20 +812,24 @@ useEffect(() => {
               <div>
 
 
-    <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
-   SafuMaxx to reward: {tokenBalance} SafuMaxx
- </Text>
-
-     <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
-   Total Distributed: {totalDistributed} Safumaxx Rewarded to NFT Holders
- </Text>
-
-
 
 </div>
 
 <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
-To process rewards, ensure SafuMaxx has been sent to contract as follows {SPLITTER_CONTRACT_ADDRESS}, you can also send PWR (only) directly to SafuSwapsendtreasury contract at 0x70807A0d4871B18062EE72d32C91C3d393a067f6, then sync the payee list this will update the rewards to the current nft holders, then after sync performed and success click the distribute rewards button.
+To process rewards, ensure SafuMaxx has been sent to contract {SPLITTER_CONTRACT_ADDRESS}. The balance will update in Pending reward. To process rewards, first "sync payee" list,  this will update the rewards to the current nft holders, then after sync performed and success click the "send rewards" button.
+</Text>
+<Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
+Native PWR can be sent to the following contract 0x70807A0d4871B18062EE72d32C91C3d393a067f6
+
+</Text>
+<Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
+Sending PWR to address above will swap the value of PWR first to SafuMaxx Token and then send the Safu tokens to the NFT rewards contract ready for distribution to existing holders of BitMaxx NFT
+</Text>
+
+
+
+<Text className="setCost" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+Pending NFT Rewards: {tokenBalance} SafuMaxx
 </Text>
 
 <div className="buttons-container" style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
@@ -816,7 +840,7 @@ To process rewards, ensure SafuMaxx has been sent to contract as follows {SPLITT
     _hover={{ bg: '#4d9795' }}
     style={{ marginRight: '1rem' }}  // Add marginRight here for spacing
   >
-    1. Sync Payees
+    Sync Payees
   </Button>
 
   <Button
@@ -827,9 +851,12 @@ To process rewards, ensure SafuMaxx has been sent to contract as follows {SPLITT
       bg: '#4d9795',
     }}
   >
-    2. Distribute Rewards
+    Send Rewards
   </Button>
 </div>
+<Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
+Total Distributed: {totalDistributed} Safumaxx Rewarded to NFT Holders
+</Text>
 
               </TabPanel>
 
@@ -869,20 +896,7 @@ To process rewards, ensure SafuMaxx has been sent to contract as follows {SPLITT
 export default App;
 
 //
-// <Text
-//   className="revealedStatus"
-//   style={{
-//     padding: '10px',
-//     textAlign: 'center',
-//     fontWeight: 'bold',
-//     color: isRevealed ? 'green' : 'orange',
-//       }}
-//       >
-//   {isRevealed ? 'NFT has been Revealed' : 'NFT is yet to be Revealed. Stay Tuned!'}
-// </Text>
-// <Text className="pauseStatus" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold', color: isPaused ? 'red' : 'green' }}>
-//   {isPaused ? 'NFT Minting currently Paused' : 'NFT Minting is Open!'}
-// </Text>
+
 
 // // Holderlist display
 // <textarea
