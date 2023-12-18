@@ -45,12 +45,13 @@ type Nft = {
     tokenId: number;
     // Add other properties if needed
 };
-//
-// const SPLITTER_CONTRACT_ADDRESS = '0x4462b3D79f607B8F0DcdB7475E553333423ec740'; // cheyne test splitter
+//0xF8aa39ccA5173589AEe5bAd8434d694d3784bf75
+const SPLITTER_CONTRACT_ADDRESS = '0xF8aa39ccA5173589AEe5bAd8434d694d3784bf75'; // v2 swapper splitter cheyne test splitter
+// const SPLITTER_CONTRACT_ADDRESS = '0xf713Ee496D8bAc31E8f8AaC61b374C609982c94C'; // live
 
-const SPLITTER_CONTRACT_ADDRESS = '0xf713Ee496D8bAc31E8f8AaC61b374C609982c94C'; // live
+// const CONTRACT_ADDRESS = '0xff8faC700d8F31081d9f28668f7D3ab42c076258'; // 2nd maxxtest 0x0e644A552B34A8F1e276bc91ADA11e25411aEF44
+const CONTRACT_ADDRESS = '0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38'; // LIVE
 
-const CONTRACT_ADDRESS = '0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38'; // 2nd maxxtest 0x0e644A552B34A8F1e276bc91ADA11e25411aEF44
 // const CONTRACT_ADDRESS = '0x27B327315cb8EFBD671FDf82730a3bD25563aea5'; // first maxx test 2
 // const CONTRACT_ADDRESS = '0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C'; // first maxx test 1
 
@@ -72,6 +73,11 @@ const getSplitterScanLink = () => `https://scan.maxxchain.org/address/${SPLITTER
 // ###################################
 function App() {
 
+  const [safumaxxPrice, setSafumaxxPrice] = useState('');
+  const [totalDistributed, setTotalDistributed] = useState('0'); // Assuming you have this state from your existing code
+  const [totalUSDValue, setTotalUSDValue] = useState('0');
+
+
 
   const account = useAccount();
     console.log('Connected wallet address:', account);
@@ -85,7 +91,6 @@ function App() {
   const [userNfts, setUserNfts] = useState<Nft[]>([]); // Update the state declaration
 
   const [tokenBalance, setTokenBalance] = useState('0');
-  const [totalDistributed, setTotalDistributed] = useState('0');
 
     const updateBalances = async () => {
       await fetchTokenBalance();
@@ -144,7 +149,31 @@ const handleUpdatePayees = async () => {
   }
 };
 
-//autopayee update
+//
+const fetchSafumaxxPrice = async () => {
+  try {
+    const response = await fetch('https://api.geckoterminal.com/api/v2/simple/networks/maxxchain/token_price/0x86d287870f0f120e62d1b23ec080cda92fad0c91');
+    const data = await response.json();
+    const price = data.data.attributes.token_prices['0x86d287870f0f120e62d1b23ec080cda92fad0c91'];
+
+    // Format the price to 4 decimal places
+    const formattedPrice = parseFloat(price).toFixed(4);
+    setSafumaxxPrice(formattedPrice);
+  } catch (error) {
+    console.error('Error fetching Safumaxx price:', error);
+    setSafumaxxPrice('Error fetching price');
+  }
+};
+
+
+
+
+
+// Fetch safumaxx price on component mount
+useEffect(() => {
+  fetchSafumaxxPrice();
+  // ... [other code in useEffect] ...
+}, []);
 
 
 const { writeAsync: distributeTokens, error: distributeError } = useContractWrite({
@@ -603,6 +632,18 @@ const fetchUserNfts = async () => {
     fetchUserNfts();
   }, [account]);
 
+  // Calculate total value of distributed rewards
+  const totalRewardsValue = safumaxxPrice && totalDistributed
+    ? (parseFloat(safumaxxPrice) * parseFloat(totalDistributed)).toFixed(2)
+    : '0';
+
+// calc usd value of rewards
+useEffect(() => {
+  const calculatedValue = safumaxxPrice && totalDistributed
+    ? (parseFloat(safumaxxPrice) * parseFloat(totalDistributed)).toFixed(2)
+    : '0';
+  setTotalUSDValue(calculatedValue);
+}, [safumaxxPrice, totalDistributed]);
 
   return (
     <>
@@ -652,7 +693,7 @@ const fetchUserNfts = async () => {
 
 
                 <Text className="pauseStatus" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold', color: isPaused ? 'red' : 'green' }}>
-                  {isPaused ? 'NFT Minting currently Paused' : 'NFT Minting is Open!'}
+                  {isPaused ? 'NFT Minting currently Paused' : 'NFT Minting is Live!'}
                 </Text>
               </div>
               <Box marginTop='2' display='flex' alignItems='center' justifyContent='center'>
@@ -683,7 +724,7 @@ const fetchUserNfts = async () => {
       {loading ? 'Loading...' : `${contractName || 'N/A'}`}
     </Text>
     <Text className="totalSupply" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-      {loading ? 'Loading...' : `Sold : ${totalSupply} / ${maxSupply}  `}
+      {loading ? 'Loading...' : `Minted : ${totalSupply} / ${maxSupply}  `}
     </Text>
     <Text className="remainingSupply" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
       {loading ? 'Loading...' : `Remaining Supply: ${remainingSupply}`}
@@ -787,6 +828,13 @@ const fetchUserNfts = async () => {
                  </Text>
 
               </div>
+              <Text className="totalRewarded" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+                Total USD Value Rewarded to Holders: ${totalUSDValue}
+              </Text>
+
+              <Text className="safumaxxPrice" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
+                  Current Safumaxx Price: ${safumaxxPrice || 'Loading...'} USD
+              </Text>
 
               <div className="nftboxwrapper" >
 
@@ -900,7 +948,7 @@ const fetchUserNfts = async () => {
 To process rewards, ensure SafuMaxx has been sent to contract {SPLITTER_CONTRACT_ADDRESS}. The balance will update in Pending reward. To process rewards, first "sync payee" list,  this will update the rewards to the current nft holders, then after sync performed and success click the "send rewards" button.
 </Text>
 <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
-Native PWR can be sent to the following contract 0x70807A0d4871B18062EE72d32C91C3d393a067f6
+Native PWR can be sent to the following contract {SPLITTER_CONTRACT_ADDRESS}
 
 </Text>
 <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
