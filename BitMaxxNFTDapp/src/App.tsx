@@ -40,20 +40,23 @@ import btm3 from './btm2.png';
 
 
 import btm2 from './nft.gif';
-
+import { Interface } from 'ethers/lib/utils';
 type Nft = {
     tokenId: number;
     // Add other properties if needed
 };
 //0xF8aa39ccA5173589AEe5bAd8434d694d3784bf75
-const SPLITTER_CONTRACT_ADDRESS = '0xF8aa39ccA5173589AEe5bAd8434d694d3784bf75'; // v2 swapper splitter cheyne test splitter
-// const SPLITTER_CONTRACT_ADDRESS = '0xf713Ee496D8bAc31E8f8AaC61b374C609982c94C'; // live
+// const SPLITTER_CONTRACT_ADDRESS = '0xF8aa39ccA5173589AEe5bAd8434d694d3784bf75'; // v2 swapper splitter cheyne test splitter
+const SPLITTER_CONTRACT_ADDRESS = '0xf713Ee496D8bAc31E8f8AaC61b374C609982c94C'; // live
 
 // const CONTRACT_ADDRESS = '0xff8faC700d8F31081d9f28668f7D3ab42c076258'; // 2nd maxxtest 0x0e644A552B34A8F1e276bc91ADA11e25411aEF44
 const CONTRACT_ADDRESS = '0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38'; // LIVE
 
 // const CONTRACT_ADDRESS = '0x27B327315cb8EFBD671FDf82730a3bD25563aea5'; // first maxx test 2
 // const CONTRACT_ADDRESS = '0xeaD4A1507C4cEE75fc3691FA57b7f2774753482C'; // first maxx test 1
+
+const NATIVESWAPTOTREASURY_ADDRESS = '0x70807A0d4871B18062EE72d32C91C3d393a067f6'; // live V1 no public dist
+
 
 const getExplorerLink = () => `https://scan.maxxchain.org/address/${CONTRACT_ADDRESS}`;
 const getOpenSeaURL = () => `https://testnets.opensea.io/assets/goerli/${CONTRACT_ADDRESS}`;
@@ -72,6 +75,10 @@ const getSplitterScanLink = () => `https://scan.maxxchain.org/address/${SPLITTER
 // ###################################
 // ###################################
 function App() {
+
+  const [btmPrice, setBtmPrice] = useState('');
+  const [anuPrice, setAnuPrice] = useState('');
+  const [pwrPrice, setPwrPrice] = useState('');
 
   const [safumaxxPrice, setSafumaxxPrice] = useState('');
   const [totalDistributed, setTotalDistributed] = useState('0'); // Assuming you have this state from your existing code
@@ -165,15 +172,14 @@ const fetchSafumaxxPrice = async () => {
   }
 };
 
-
-
-
-
 // Fetch safumaxx price on component mount
 useEffect(() => {
   fetchSafumaxxPrice();
   // ... [other code in useEffect] ...
 }, []);
+
+//
+
 
 
 const { writeAsync: distributeTokens, error: distributeError } = useContractWrite({
@@ -252,6 +258,12 @@ const { writeAsync: distributeTokens, error: distributeError } = useContractWrit
     }
   };
 
+  const { writeAsync: publicDistribute, error: publicDistributeError } = useContractWrite({
+  addressOrName: SPLITTER_CONTRACT_ADDRESS,
+  contractInterface: splitterABI,
+  functionName: 'publicDistribute',
+});
+
 
 
 
@@ -304,7 +316,7 @@ useEffect(() => {
   updateBalances();
 
   // Set up an interval to periodically refresh the data
-  const interval = setInterval(updateBalances, 30000); // Refresh every 30 seconds
+  const interval = setInterval(updateBalances, 120000); // Refresh every 120 seconds
 
   // Clean up the interval when the component unmounts
   return () => clearInterval(interval);
@@ -543,7 +555,7 @@ const fetchHolders = async () => {
 
 useEffect(() => {
   fetchHolders(); // Initial fetch
-  const interval = setInterval(fetchHolders, 30000); // Refresh every 30 seconds
+  const interval = setInterval(fetchHolders, 120000); // Refresh every 30 seconds
 
   return () => clearInterval(interval); // Cleanup interval on component unmount
 }, []);
@@ -645,6 +657,32 @@ useEffect(() => {
   setTotalUSDValue(calculatedValue);
 }, [safumaxxPrice, totalDistributed]);
 
+
+
+
+
+// Function to fetch token prices
+const fetchTokenPrices = async () => {
+  try {
+    const response = await fetch('https://api.geckoterminal.com/api/v2/simple/networks/maxxchain/token_price/0xc27bbd4276f9eb2d6f2c4623612412d52d7bb43d%2C0x6cb6c8d16e7b6fd5a815702b824e6dfdf148a7d9%2C0xa29d0ee618f33d8efe9a20557fd0ef63dd050859');
+    const data = await response.json();
+    const prices = data.data.attributes.token_prices;
+
+    // Format prices
+    setBtmPrice(parseFloat(prices['0xc27bbd4276f9eb2d6f2c4623612412d52d7bb43d']).toFixed(6));
+    setAnuPrice(parseFloat(prices['0x6cb6c8d16e7b6fd5a815702b824e6dfdf148a7d9']).toFixed(8));
+    setPwrPrice(parseFloat(prices['0xa29d0ee618f33d8efe9a20557fd0ef63dd050859']).toFixed(6));
+  } catch (error) {
+    console.error('Error fetching token prices:', error);
+  }
+};
+
+// Fetch prices on component mount
+useEffect(() => {
+  fetchTokenPrices();
+}, []);
+
+
   return (
     <>
       <ToastContainer />
@@ -739,7 +777,7 @@ useEffect(() => {
 
 
     <Text className="userNftBalance" style={{ textAlign: 'center', fontWeight: 'bold' }}>
-      {loading ? 'Loading...' : `BitMaxx NFTs in wallet : ${userNftBalance} `}
+      {loading ? 'Loading...' : `BitMaxx Nfts in your Wallet : ${userNftBalance} `}
     </Text>
   </div>
 
@@ -805,36 +843,25 @@ useEffect(() => {
 
               <div>
 
-                <img src={btm} alt="BitMaxx NFT Collection" className="logobody" style={{ width: '50%', height: '50%' }} />
 
 
 
-                <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                  {loading ? 'Loading...' : `Remaining Supply: ${remainingSupply}`}
-                </Text>
-                <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                  {loading ? 'Loading...' : `NFT Price: ${cost} PWR`}
-                </Text>
 
-                <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                  {loading ? 'Loading...' : `Contract Balance: ${contractBalanceValue} PWR`}
-                </Text>
+
+
                 <Text className="pricecost" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                Total pending NFT Rewards: {tokenBalance} SafuMaxx
+                Total pending NFT Rewards to all holders: {tokenBalance} SafuMaxx
                 </Text>
 
                   <Text className="setCost" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                   Total rewarded to holders: {totalDistributed} Safumaxx
+                   Total rewarded already to all holders: {totalDistributed} Safumaxx
                  </Text>
 
               </div>
               <Text className="totalRewarded" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                Total USD Value Rewarded to Holders: ${totalUSDValue}
+                Total USD Value Rewarded to all Holders: ${totalUSDValue}
               </Text>
 
-              <Text className="safumaxxPrice" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
-                  Current Safumaxx Price: ${safumaxxPrice || 'Loading...'} USD
-              </Text>
 
               <div className="nftboxwrapper" >
 
@@ -856,6 +883,21 @@ useEffect(() => {
     ))}
   </div>
 </div>
+<Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+      BitMaxx (BTM): ${btmPrice || 'Loading...'} USD</Text>
+<Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+      Anunaki (ANU): ${anuPrice || 'Loading...'} USD</Text>
+<Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+      Wrapped Power (WPWR): ${pwrPrice || 'Loading...'} USD</Text>
+<Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+      SafuMaxx (SafuMaxx): ${safumaxxPrice || 'Loading...'} USD
+</Text>
+<Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+  {loading ? 'Loading...' : `Remaining Supply: ${remainingSupply}`}
+</Text>
+<Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+  {loading ? 'Loading...' : `NFT Price: ${cost} PWR`}
+</Text>
 
 
 
@@ -948,7 +990,7 @@ useEffect(() => {
 To process rewards, ensure SafuMaxx has been sent to contract {SPLITTER_CONTRACT_ADDRESS}. The balance will update in Pending reward. To process rewards, first "sync payee" list,  this will update the rewards to the current nft holders, then after sync performed and success click the "send rewards" button.
 </Text>
 <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
-Native PWR can be sent to the following contract {SPLITTER_CONTRACT_ADDRESS}
+Native PWR can be sent to the following contract {NATIVESWAPTOTREASURY_ADDRESS}
 
 </Text>
 <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
@@ -991,9 +1033,14 @@ Total Distributed: {totalDistributed} Safumaxx Rewarded to NFT Holders
 
            </TabPanels>
           </Tabs>
+          <div>
+           <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bolder' }}>
+              BTM: ${btmPrice || 'Loading...'} - WPWR: ${pwrPrice || 'Loading...'} </Text>
             <Text className="paragraph1" style={{ color: 'white', padding: '20px', textAlign: 'center' }}>
               &copy; BitMaxx NFT Collection 2023. All rights reserved.
             </Text>
+
+          </div>
 
 <div style={{ display: 'flex', justifyContent: 'center' }}>
 
@@ -1024,36 +1071,25 @@ Total Distributed: {totalDistributed} Safumaxx Rewarded to NFT Holders
 
 export default App;
 
+// <img src={btm} alt="BitMaxx NFT Collection" className="logobody" style={{ width: '50%', height: '50%' }} />
 
 
-
+// THIS IS TO ADD ON SOLD OUT IN STATS TAB ALSO REPLACE SPLITTER CONTRACT WITH THIS 0xF8aa39ccA5173589AEe5bAd8434d694d3784bf75
 //
-// {userNfts.map((nft) => (
-//   <div key={nft.tokenId.toString()}>
-//     <img src={btm} alt={`NFT ${nft.tokenId.toString()}`} style={{ width: '100%' }} />
-//     <Text>Token ID: {nft.tokenId.toString()}</Text>
-//   </div>
-// ))}
-
-
+// <div className="buttons-container" style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
 //
-
-
-// // Holderlist display
-// <textarea
-//   value={holdersString}
-//   readOnly
-//   style={{
-//     width: '100%',
-//     height: '200px',
-//     fontSize: '0.8em',
-//     color: 'black', // Set text color to white
-//     backgroundColor: 'white', // Optional: Change background if needed for better visibility
-//     border: '1px solid gray' // Optional: Add a border for better visibility
-//   }}
-// />
-
-                //
-                // <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
-                //   {loading ? 'Loading...' : `Contract Balance: ${ethers.utils.formatEther(contractBalance)} PWR`}
-                // </Text>
+// <Button
+// onClick={handleDistributeClick}
+// textColor="white"
+// bg="#058ba1"
+// _hover={{
+//   bg: '#4d9795',
+// }}
+// >
+// Distribute Rewards
+// </Button>
+//
+// </div>
+// <Text className="safumaxxPrice" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
+//     Anyone can process the rewards pending to all holders. The claim can only be made once every 24 hours. Beat the Devs and be the one to claim for all!
+// </Text>
