@@ -1,9 +1,15 @@
 import React from "react";
+
 import ReactDOM from "react-dom/client";
+
 import App from "./App";
+
 import "@rainbow-me/rainbowkit/styles.css";
+
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+
 import { chain, configureChains, createClient, WagmiConfig, Chain } from "wagmi"; // Import 'Chain' from 'wagmi'
+
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import { publicProvider } from "wagmi/providers/public";
 import { ChakraProvider } from "@chakra-ui/react";

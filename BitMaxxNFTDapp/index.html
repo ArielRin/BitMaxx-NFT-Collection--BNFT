@@ -5,14 +5,28 @@
     <link rel="icon" type="image/svg+xml" href="/src/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BitMaxx NFT Collection 2023</title>
-
-     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/master/twitter.jpg" />
     <meta name="twitter:description" content="Welcome to the BitMaxx NFT Collection! This collection is built on the MaxxChain network, bringing you a seamless and secure NFT experience. Each NFT in this collection is priced at 5000 PWR, making it an exclusive addition to your digital assets. " />
     <meta name="description" content="Welcome to the BitMaxx NFT Collection! This collection is built on the MaxxChain network, bringing you a seamless and secure NFT experience. Each NFT in this collection is priced at 5000 PWR, making it an exclusive addition to your digital assets. " />
   </head>
   <body>
+    <!-- Loading Screen Div with Black Background -->
+    <div id="loading" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black url('https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/finals2/BitMaxxNFTDapp/src/nft.gif') no-repeat center center; background-size: contain; z-index: 9999; opacity: 1; transition: opacity 1s;"></div>
+
+    <!-- Main Content -->
     <div id="root"></div>
+
+    <!-- JavaScript for Loading Screen -->
+    <script>
+      setTimeout(function() {
+        var loadingDiv = document.getElementById('loading');
+        loadingDiv.style.opacity = '0';
+        setTimeout(function() { loadingDiv.style.display = 'none'; }, 1000);
+      }, 5000);
+    </script>
+
+    <!-- Your existing scripts -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
