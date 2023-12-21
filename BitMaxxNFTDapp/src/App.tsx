@@ -83,6 +83,9 @@ function App() {
   const account = useAccount();
     console.log('Connected wallet address:', account);
 
+
+
+
   const [tabIndex, setTabIndex] = useState(0);
 
   const [contractName, setContractName] = useState('');
