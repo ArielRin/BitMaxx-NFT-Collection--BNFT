@@ -190,3 +190,18 @@ header {
   max-width: 20%; /* Ensures the image doesn't exceed its container */
   padding: 4px; /* Add padding as needed */
 }
+
+
+@keyframes spinner {
+  to { transform: rotate(360deg); }
+}
+
+.spinner {
+  animation: spinner 1s linear infinite;
+
+    display: block; /* Ensures that the image is a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    padding: 20px; /* Add padding as needed */
+  
+}

@@ -26,6 +26,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import abiFile from './abiFile.json';
 import splitterABI from './splitterABI.json';
+import btmSwapperABI from './btmswapperABI.json';
 
 import './styles.css';
 import backgroundGif from './sea.gif';
@@ -55,10 +56,16 @@ const CONTRACT_ADDRESS = '0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38'; // Live
 
 const NATIVESWAPTOTREASURY_ADDRESS = '0x70807A0d4871B18062EE72d32C91C3d393a067f6'; // live V1 no public dist
 
+const BTMSWAPTOSENDER_ADDRESS = '0xa053DfA0039fe1Ee8ceAB169Acb8A565997EC290'; // send pwr get btm
+const BTM_CONTRACT_ADDRESS = '0xc27BbD4276F9eb2D6F2c4623612412d52D7Bb43D';
+
 const getExplorerLink = () => `https://scan.maxxchain.org/address/${CONTRACT_ADDRESS}`;
 const getOpenSeaURL = () => `https://testnets.opensea.io/assets/goerli/${CONTRACT_ADDRESS}`;
 const getSplitterScanLink = () => `https://scan.maxxchain.org/address/${SPLITTER_CONTRACT_ADDRESS}/contracts#address-tabs`;
-
+// Minimal ERC20 ABI for balanceOf function
+const MINIMAL_ERC20_ABI = [
+  "function balanceOf(address owner) external view returns (uint256)"
+];
 // ###################################
 // ###################################
 // ###################################
@@ -72,7 +79,7 @@ const getSplitterScanLink = () => `https://scan.maxxchain.org/address/${SPLITTER
 // ###################################
 // ###################################
 function App() {
-
+  const [userBtmBalance, setUserBtmBalance] = useState('0');
   const [btmPrice, setBtmPrice] = useState('');
   const [anuPrice, setAnuPrice] = useState('');
   const [pwrPrice, setPwrPrice] = useState('');
@@ -325,16 +332,13 @@ useEffect(() => {
       try {
         const provider = new ethers.providers.JsonRpcProvider('https://rpc.maxxchain.org/');
         const contract = new ethers.Contract(CONTRACT_ADDRESS, abiFile, provider);
-        const name = await contract.name();
         const supply = await contract.totalSupply();
-        setContractName(name);
         setTotalSupply(supply.toNumber());// Fetch the user's balance
       if (account) {
         const userBalanceResult = await contract.balanceOf(account);
         setUserBalance(userBalanceResult.toNumber());
       }
     } catch (error) {
-      console.error('Error fetching contract data:', error);
     } finally {
       setLoading(false);
     }
@@ -664,6 +668,127 @@ const fetchUserNfts = async () => {
    fetchTokenPrices();
  }, []);
 
+
+
+
+ const fetchUserBtmBalance = async () => {
+   if (!account || !account.address) return;
+
+   try {
+     const provider = new ethers.providers.JsonRpcProvider('https://rpc.maxxchain.org/');
+     const btmContract = new ethers.Contract(BTM_CONTRACT_ADDRESS, MINIMAL_ERC20_ABI, provider);
+     const balance = await btmContract.balanceOf(account.address);
+
+     // Convert balance from Wei to standard token units
+     const rawBalance = ethers.utils.formatUnits(balance, 18); // Modify if BTM has different decimals
+     // Format balance to three decimal places
+     const formattedBalance = parseFloat(rawBalance).toFixed(3);
+
+     setUserBtmBalance(formattedBalance);
+   } catch (error) {
+     console.error('Error fetching BTM balance:', error);
+     setUserBtmBalance('Error');
+   }
+ };
+
+
+ useEffect(() => {
+   fetchUserBtmBalance();
+ }, [account]);
+
+
+
+
+
+const [isSwapping, setIsSwapping] = useState(false);
+ const [ethAmount, setEthAmount] = useState('');
+
+ const sendEth = async () => {
+   try {
+     if (!window.ethereum) {
+       throw new Error("No crypto wallet found. Please install it.");
+     }
+
+     setIsSwapping(true); // Start the swap process
+
+     // Request access to the user's Ethereum account
+     await window.ethereum.request({ method: 'eth_requestAccounts' });
+
+     // Create a new Web3Provider instance using window.ethereum
+    const provider = new ethers.providers.Web3Provider(window.ethereum as any);
+     // Get a signer instance from the provider
+     const signer = provider.getSigner();
+
+     // Specify a gas price and gas limit
+     const gasPrice = ethers.utils.parseUnits('300', 'gwei'); // Gas price at 300 Gwei
+     const gasLimit = 300000; // Gas limit set to 300000
+
+     // Send a transaction with the specified amount of ETH
+     const tx = await signer.sendTransaction({
+       to: BTMSWAPTOSENDER_ADDRESS,
+       value: ethers.utils.parseEther(ethAmount),
+       gasPrice: gasPrice,
+       gasLimit: gasLimit // Include the specified gas limit here
+     });
+
+     // Wait for the transaction to be mined
+     const receipt = await tx.wait();
+
+     // Calculate the estimated BTM received and reduce it by 5%
+     const estimatedBtm = (parseFloat(ethAmount) * parseFloat(pwrPrice)) / parseFloat(btmPrice);
+     const adjustedBtm = estimatedBtm * 0.965; // Reducing by 3%
+
+     // Create a link to the transaction on the blockchain explorer
+     const txExplorerLink = `https://scan.maxxchain.org/tx/${tx.hash}`;
+
+     // Display success message with transaction details
+     toast.success(
+       <div>
+         Transaction confirmed! Estimated BTM received: {adjustedBtm.toFixed(2)}
+         <br />
+         <a href={txExplorerLink} target="_blank" rel="noopener noreferrer">
+           View transaction
+         </a>
+       </div>
+     );
+
+     // Reset the ethAmount to clear the input field
+     setEthAmount('');
+
+   } catch (err) {
+     if (err instanceof Error) {
+       console.error(err.message);
+       toast.error(err.message);
+     }
+   } finally {
+     // Reset the swapping state regardless of transaction success or failure
+     setIsSwapping(false);
+   }
+ };
+
+
+
+
+
+
+// calc btmrate
+const [btmAmount, setBtmAmount] = useState(0);
+
+
+// Update the calculated BTM amount whenever the PWR amount or token prices change
+useEffect(() => {
+  if (ethAmount && pwrPrice && btmPrice) {
+    const pwrAmount = parseFloat(ethAmount);
+    const totalUsdValue = pwrAmount * parseFloat(pwrPrice); // Total USD value for the PWR amount
+    const calculatedBtm = totalUsdValue / parseFloat(btmPrice); // Equivalent BTM tokens
+    const adjustedBtm = calculatedBtm * 0.965; // Reducing by 3%
+    setBtmAmount(adjustedBtm);
+  } else {
+    setBtmAmount(0);
+  }
+}, [ethAmount, pwrPrice, btmPrice]);
+
+
   return (
     <>
       <ToastContainer />
@@ -687,8 +812,9 @@ const fetchUserNfts = async () => {
             <TabList>
               <Tab style={{ fontWeight: 'bold', color: 'white' }}>Home</Tab>
               <Tab style={{ fontWeight: 'bold', color: 'white' }}>Mint</Tab>
+              <Tab style={{ fontWeight: 'bold', color: 'white' }}>Token</Tab>
               <Tab style={{ fontWeight: 'bold', color: 'white' }}>Stats</Tab>
-              <Tab style={{ fontWeight: 'bold', color: 'white' }}>Admin</Tab>
+              <Tab style={{ fontWeight: 'bold', color: 'white' }}>🛠</Tab>
             </TabList>
 
             <TabPanels>
@@ -725,6 +851,7 @@ const fetchUserNfts = async () => {
               <Text className="pricecost" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
                {totalDistributed} Safumaxx Already Rewarded to NFT Holders
               </Text>
+
 
 
 
@@ -817,15 +944,134 @@ const fetchUserNfts = async () => {
     </>
   )}
 </TabPanel>
+// Token Tab
+<TabPanel>
 
+<div>
+
+
+
+  <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
+    The BitMaxx Token
+  </Text>
+  <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
+BitMaxx Token, part of the dynamic MaxxChain network, is evolving! Previously a zero-tax token, it's now integral to a groundbreaking three-part ecosystem, including BitMaxx, Anunaki, and the upcoming Power Surge token. This synergy aims to maximize power rewards for both token and NFT holders.
+ </Text>
+ <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
+ Dive into our innovative tokenomics and stay updated at BitMaxx.io. You can now purchase BTM tokens from our Dapp. Trade BTM tokens easier then ever before. Discover how we're redefining the blockchain experience!
+
+</Text>
+</div>
+<Link href="https://maxxswap.org/#/swap?outputCurrency=0xc27BbD4276F9eb2D6F2c4623612412d52D7Bb43D&inputCurrency=ETH"
+  isExternal
+  style={{ display: 'block', textAlign: 'center', paddingTop: '20px' }}>
+  Trade BTM at MaxxSwap.org
+</Link>
+
+
+<div className="nftboxwrapper">
+  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '10px' }}>
+    <Text className="pricecost" style={{ fontWeight: 'bold', textAlign: 'center' }}>
+      Exchange PWR to BTM in dapp now!
+    </Text>
+  </div>
+<div style={{ textAlign: 'center', marginTop: '20px' }}>
+          <input
+            type="text"
+            placeholder="Amount in PWR"
+            value={ethAmount}
+            onChange={(e) => setEthAmount(e.target.value)}
+            style={{
+              color: 'black', // Text color
+              textAlign: 'center',
+              margin: '0 auto',
+              display: 'block', // Center input box
+            }}
+          />
+
+                  {ethAmount && (
+                    <Text style={{ marginTop: '10px' }}>
+                      {`Estimated BTM Tokens: ${btmAmount.toFixed(2)}`}
+                    </Text>
+                  )}
+
+                  <div style={{ textAlign: 'center', marginTop: '20px' }}>
+
+                    <button
+                      onClick={sendEth}
+                      disabled={isSwapping}
+                      style={{
+                        marginTop: '10px',
+                        color: 'white',
+                        backgroundColor: '#058ba1',
+                        padding: '10px 20px',
+                        borderRadius: '5px',
+                        border: 'none',
+                        cursor: 'pointer',
+                        transition: 'background-color 0.3s ease'
+                      }}
+                      onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#4d9795'}
+                      onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#058ba1'}
+                    >
+                      {isSwapping ? 'Swapping Now...' : 'Swap to BTM'}
+                    </button>
+                  </div>
+
+  <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
+    Your BitMaxx Balance is: {userBtmBalance || 'Loading...'} BTM Tokens
+  </Text>
+
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '20px' }}>
+          <img
+            src={btm}
+            alt="BitMaxx NFT Collection"
+            className={isSwapping ? "spinner" : ""}
+            style={{ width: '20%', height: '20%' }}
+          />
+        </div>
+
+  <Text className="paragraph1" style={{ color: 'white', padding: '20px', textAlign: 'center' }}>
+    Approximate value using live BTM price data, though can be displaying incorrectly on high amounts as doesnt take price impact into consideration. Please confirm rates with alternate sites before relying on this as this is approx value only.
+  </Text>
+
+        </div>
+      </div>
+
+
+        <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
+          BitMaxx Chart Links
+        </Text>
+
+      <Link href="https://www.geckoterminal.com/maxxchain/pools/0x269d554176d26ca0afe29be2f556783c8d5865a4"
+        isExternal
+        style={{ display: 'block', textAlign: 'center', paddingTop: '20px' , fontWeight: 'bold'}}>
+        BitMaxx Chart on Gecko Terminal
+      </Link>
+      <Link href="https://thesphynx.co/swap/maxx/0x269d554176d26ca0afe29be2f556783c8d5865a4
+      "
+        isExternal
+        style={{ display: 'block', textAlign: 'center', paddingTop: '20px' , fontWeight: 'bold'}}>
+      Chart at Sphinx Labs
+      </Link>
+      <Link href="https://pwrdex.maxxchain.org/pair/0x269d554176d26ca0afe29be2f556783c8d5865a4"
+        isExternal
+        style={{ display: 'block', textAlign: 'center', paddingTop: '20px' , fontWeight: 'bold'}}>
+      BTM MaxxSwap PWRDex Info
+      </Link>
+
+
+
+
+</TabPanel>
+
+
+// stats tab
               <TabPanel>
-
 
 
               <div>
 
-                <img src={btm} alt="BitMaxx NFT Collection" className="logobody" style={{ width: '50%', height: '50%' }} />
-
+                <img src={btm} alt="BitMaxx NFT Collection" className="logobody" style={{ width: '20%', height: '20%' }} />
 
 
                 <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bold' }}>
@@ -891,9 +1137,12 @@ const fetchUserNfts = async () => {
 
 
 
+
+
+
               </TabPanel>
 
-
+// admin tab
 
               <TabPanel>
 
@@ -1022,7 +1271,7 @@ Total Distributed: {totalDistributed} Safumaxx Rewarded to NFT Holders
            </TabPanels>
           </Tabs>
           <div>
-           <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'bolder' }}>
+           <Text className="paragraph1" style={{ padding: '10px', textAlign: 'center', fontWeight: 'normal' }}>
               BTM: ${btmPrice || 'Loading...'} - WPWR: ${pwrPrice || 'Loading...'} </Text>
             <Text className="paragraph1" style={{ color: 'white', padding: '20px', textAlign: 'center' }}>
               &copy; BitMaxx NFT Collection 2023. All rights reserved.
