@@ -81,7 +81,6 @@ This component enhances the DApp by adding a layer of convenience and functional
 4. **Execution**: The user confirms the swap, and the DApp interacts with the smart contract to execute the transaction.
 5. **Notification**: Upon completion, the user is notified, and their balance is updated.
 
-## Conclusion
 
 The **Swap to BTM** component is a prime example of how decentralized applications can provide utility while enhancing user experience. By streamlining the process of token exchange and providing all necessary information and actions in one place, the BitMaxx NFT DApp stands out for its user-centric approach and innovative use of blockchain technology.
 
