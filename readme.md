@@ -43,6 +43,52 @@ Feel free to reach out to us if you have any questions or need assistance.
 
 Happy collecting!
 
+
+# Swap to BTM Component
+
+The **Swap to BTM** component is a seamless and integrated feature of the BitMaxx NFT DApp that allows users to trade their PWR (Power Native coin) for BitMaxx Tokens directly within the application.
+
+## Features
+
+![Swap to BTM Component](https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/finals2/Assets/Swap2BTM.png)
+
+
+### Live BTM Balance
+Users can view their current balance of BTM tokens in real-time. This live balance is fetched from the blockchain, ensuring that the displayed information is always up-to-date.
+
+### Estimated Value Calculation
+Before executing a swap, users can enter the amount of PWR they wish to exchange. The component then calculates the estimated amount of BTM tokens they will receive. This calculation is based on the current exchange rates fetched from a reliable API source.
+
+### In-App Swap Execution
+By interacting with the smart contract directly through the DApp, users can swap their PWR for BTM tokens without the need to navigate to external exchanges or platforms.
+
+### Transaction Confirmation and Details
+Upon a successful transaction, a toast notification appears, confirming the swap. It provides the estimated value of BTM received and a link to the transaction on the blockchain explorer for full transparency and traceability.
+
+## Functional Utility
+
+This component enhances the DApp by adding a layer of convenience and functionality. Users benefit from the ability to:
+
+- Perform token swaps directly within the DApp interface.
+- Immediately see the impact of their swap on their BTM balance.
+- Access the blockchain explorer link for transaction verification without manual searching.
+
+## How It Works
+
+1. **Fetching Current Rates**: The DApp calls an external API to fetch the latest BTM token prices.
+2. **User Input**: The user enters the desired amount of PWR to swap.
+3. **Estimation**: The DApp calculates the estimated BTM to be received.
+4. **Execution**: The user confirms the swap, and the DApp interacts with the smart contract to execute the transaction.
+5. **Notification**: Upon completion, the user is notified, and their balance is updated.
+
+## Conclusion
+
+The **Swap to BTM** component is a prime example of how decentralized applications can provide utility while enhancing user experience. By streamlining the process of token exchange and providing all necessary information and actions in one place, the BitMaxx NFT DApp stands out for its user-centric approach and innovative use of blockchain technology.
+
+---
+
+
+
 ## Admin Overview BitMaxx NFT Collection - Admin Tab Explained
 
 
@@ -96,6 +142,3 @@ MaxxChain https://scan.maxxchain.org/address/0x70807A0d4871B18062EE72d32C91C3d39
 
 ## TreasuryNFTRewardsDistributor Deployed on Chains
 MaxxChain https://scan.maxxchain.org/address/0xf713Ee496D8bAc31E8f8AaC61b374C609982c94C/contracts#address-tabs
-
-
-
