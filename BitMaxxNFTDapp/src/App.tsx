@@ -39,6 +39,7 @@ import yourGif from './nft.gif';
 import btm from './btm.png';
 import btm3 from './btm2.png';
 
+import fox from './fox.png';
 
 import btm2 from './nft.gif';
 
@@ -57,7 +58,12 @@ const CONTRACT_ADDRESS = '0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38'; // Live
 const NATIVESWAPTOTREASURY_ADDRESS = '0x70807A0d4871B18062EE72d32C91C3d393a067f6'; // live V1 no public dist
 
 const BTMSWAPTOSENDER_ADDRESS = '0xa053DfA0039fe1Ee8ceAB169Acb8A565997EC290'; // send pwr get btm
+
+
+
 const BTM_CONTRACT_ADDRESS = '0xc27BbD4276F9eb2D6F2c4623612412d52D7Bb43D';
+const BITMAXX_TOKEN_LOGO = 'https://raw.githubusercontent.com/ArielRin/BitMaxx-NFT-Collection--BNFT/finals2/BitMaxxNFTDapp/src/BTM.png';
+
 
 const getExplorerLink = () => `https://scan.maxxchain.org/address/${CONTRACT_ADDRESS}`;
 const getOpenSeaURL = () => `https://testnets.opensea.io/assets/goerli/${CONTRACT_ADDRESS}`;
@@ -747,7 +753,7 @@ const [isSwapping, setIsSwapping] = useState(false);
          Transaction confirmed! Estimated BTM received: {adjustedBtm.toFixed(2)}
          <br />
          <a href={txExplorerLink} target="_blank" rel="noopener noreferrer">
-           View transaction
+           View TX details at Maxx Explorer
          </a>
        </div>
      );
@@ -787,6 +793,39 @@ useEffect(() => {
     setBtmAmount(0);
   }
 }, [ethAmount, pwrPrice, btmPrice]);
+
+  // Function to add BitMaxx token to user's wallet
+const addTokenToWallet = async () => {
+   try {
+     if (window.ethereum) {
+       const tokenSymbol = 'BTM'; // Replace with actual token symbol
+       const tokenDecimals = 18; // Replace with actual token decimals
+
+       await window.ethereum.request({
+         method: 'wallet_watchAsset',
+         params: {
+           type: 'ERC20',
+           options: {
+             address: BTM_CONTRACT_ADDRESS,
+             symbol: tokenSymbol,
+             decimals: tokenDecimals,
+             image: BITMAXX_TOKEN_LOGO,
+           },
+         },
+       });
+     } else {
+       console.error("Ethereum provider (like MetaMask) not found.");
+     }
+   } catch (error) {
+     console.error('Error adding token to wallet:', error);
+   }
+ };
+
+
+
+
+
+
 
 
   return (
@@ -828,6 +867,7 @@ useEffect(() => {
                 <Text className="pricecost" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
                   BitMaxx  NFT Collection
                 </Text>
+
 
                 <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
                 Welcome to the BitMaxx NFT Collection! This collection is built on the MaxxChain network, bringing you a seamless and secure NFT experience. Each NFT in this collection is priced at 5000 PWR, making it an exclusive addition to your digital assets.
@@ -975,19 +1015,25 @@ BitMaxx Token, part of the dynamic MaxxChain network, is evolving! Previously a 
       Exchange PWR to BTM in dapp now!
     </Text>
   </div>
-<div style={{ textAlign: 'center', marginTop: '20px' }}>
-          <input
-            type="text"
-            placeholder="Amount in PWR"
-            value={ethAmount}
-            onChange={(e) => setEthAmount(e.target.value)}
-            style={{
-              color: 'black', // Text color
-              textAlign: 'center',
-              margin: '0 auto',
-              display: 'block', // Center input box
-            }}
-          />
+  <div style={{ textAlign: 'center', marginTop: '20px' }}>
+    <input
+      type="text"
+      placeholder="Amount in PWR"
+      value={ethAmount}
+      onChange={(e) => setEthAmount(e.target.value)}
+      style={{
+        color: 'black', // Text color
+        textAlign: 'center',
+        margin: '0 auto',
+        display: 'block', // Center input box
+        fontSize: '1.2em', // Bigger text size
+        padding: '10px', // Padding for larger touch area and visual appeal
+        borderRadius: '15px', // Rounded edges
+        border: '2px solid #058ba1', // Border styling (optional)
+        outline: 'none', // Removes the default focus outline (optional)
+        width: '60%', // Adjust width as needed
+      }}
+    />
 
                   {ethAmount && (
                     <Text style={{ marginTop: '10px' }}>
@@ -1021,6 +1067,7 @@ BitMaxx Token, part of the dynamic MaxxChain network, is evolving! Previously a 
     Your BitMaxx Balance is: {userBtmBalance || 'Loading...'} BTM Tokens
   </Text>
 
+
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '20px' }}>
           <img
             src={btm}
@@ -1028,6 +1075,22 @@ BitMaxx Token, part of the dynamic MaxxChain network, is evolving! Previously a 
             className={isSwapping ? "spinner" : ""}
             style={{ width: '20%', height: '20%' }}
           />
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '20px' }}>
+
+        <Button
+          marginTop='1'
+          textColor='white'
+          bg='#058ba1'
+          _hover={{
+            bg: '#4d9795',
+          }}
+          onClick={addTokenToWallet}
+        >
+          <img src={fox} alt="metamask fox image logo" style={{ width: '20px', height: '20px', marginRight: '10px' }} />
+          Add BitMaxx Token to Wallet
+        </Button>
+
         </div>
 
   <Text className="paragraph1" style={{ color: 'white', padding: '20px', textAlign: 'center' }}>
