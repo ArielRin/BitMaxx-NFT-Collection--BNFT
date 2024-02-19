@@ -50,6 +50,8 @@ type Nft = {
 //
 
 const SPLITTER_CONTRACT_ADDRESS = '0xf713Ee496D8bAc31E8f8AaC61b374C609982c94C'; // live
+// const CONTRACT_ADDRESS = '0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38'; // Live
+
 const CONTRACT_ADDRESS = '0xaA0015FbB55b0f9E3dF74e0827a63099e4201E38'; // Live
 //
 // const CONTRACT_ADDRESS = '0xff8faC700d8F31081d9f28668f7D3ab42c076258'; // first maxx test 1
@@ -995,7 +997,7 @@ const addTokenToWallet = async () => {
     The BitMaxx Token
   </Text>
   <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
-BitMaxx Token, part of the dynamic MaxxChain network, is evolving! Previously a zero-tax token, it's now integral to a groundbreaking three-part ecosystem, including BitMaxx, Anunaki, and the upcoming Power Surge token. This synergy aims to maximize power rewards for both token and NFT holders.
+BitMaxx Token, part of the dynamic MaxxChain network, is evolving! Previously a zero-tax token, it's now integral to a groundbreaking three-part ecosystem, including BitMaxx, Anunaki, and the upcoming The Man Token token. This synergy aims to maximize power rewards for both token and NFT holders.
  </Text>
  <Text className="paragraph1" style={{ textAlign: 'center', fontWeight: 'bolder' }}>
  Dive into our innovative tokenomics and stay updated at BitMaxx.io. You can now purchase BTM tokens from our Dapp. Trade BTM tokens easier then ever before. Discover how we're redefining the blockchain experience!
